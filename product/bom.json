@@ -1,5 +1,5 @@
 {
-  "schema_version":1,"status":"ready","bom_ready":true,"requirements_digest":"999c6f5b6328cf719d506bfcd1b4bad103117823b526b7fe7155972774ab6311",
-  "items":[{"id":"inclined_plate_base","role":"printed mechanical part","name":"15 degree wedge backboard with contained pockets","quantity":1,"procurement_status":"fabricate_from_cad","source":"generated_support_geometry","selection_reason":"Custom flat-bottom 15 degree wedge backboard with a contained R4 rounded-rectangle blind pocket and a separate 30 degree rearward long surface groove.","part_identity":"709e80c88487a241"}],
+  "schema_version":1,"status":"ready","bom_ready":true,"requirements_digest":"46da0430d7885987545249ca70c5adad0eb9d7b24f636d3094f5590b1f02033a",
+  "items":[{"id":"inclined_plate_base","role":"printed mechanical part","name":"10 degree wedge backboard with through-edge groove","quantity":1,"procurement_status":"fabricate_from_cad","source":"generated_support_geometry","selection_reason":"Custom flat-bottom 10 degree wedge backboard with a contained R4 rounded-rectangle blind pocket and a separate 6 mm deep 30 degree rearward surface groove open through both side edges.","part_identity":"709e80c88487a241"}],
   "risks":[{"id":"default_dimensions","status":"advisory","description":"Overall wedge, pocket, long-groove dimensions, and positions are editable defaults because the marked image has no scale."}]
 }
