@@ -1,0 +1,12 @@
+{
+  "kind": "mechanical_constraints",
+  "design_id": "inclined_plate_base",
+  "constraints": {
+    "panel": { "width_mm": 180, "height_mm": 110, "thickness_mm": 8, "corner_radius_mm": 8 },
+    "orientation": { "panel_slope_from_horizontal_deg": 38 },
+    "opening": { "kind": "rounded_rectangle_through_opening", "width_mm": 24, "height_mm": 16, "corner_radius_mm": 4, "top_edge_offset_mm": 25 },
+    "groove": { "depth_mm": 4, "width_mm": 6, "slope_from_panel_horizontal_deg": 65, "passes_through_opening_center": true },
+    "source_reference": "product/references/uploads/20260916T141604844Z-1-image.png"
+  },
+  "status": "ready_for_cad"
+}

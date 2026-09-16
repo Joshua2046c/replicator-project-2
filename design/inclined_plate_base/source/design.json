@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "buildNumber": 2,
+  "sourceHash": "4e6ab09f19c5e0b79aba7cd53506001c16a24bfcf8c1a95c677f5353e459bcb6",
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "inclined_plate",
+      "label": "inclined_plate",
+      "cells": [
+        {
+          "id": "inclined_plate",
+          "target": "inclined_plate",
+          "order": 0,
+          "path": "design/inclined_plate_base/source/parts/inclined_plate/000-inclined_plate.py",
+          "sha256": "80269f22fa8f18b594bf8cf7b3d54e41b3e405bccd50935bbae3b2819bbb4832"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "inclined_plate",
+      "target": "inclined_plate",
+      "label": "Inclined plate base",
+      "kind": "generated",
+      "shapeHash": "794b9bfdc84007dab0f04c489ee9485cae85b5c643161e4c8230e6baa9aa2083",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-09-16T14:22:32.142Z",
+  "parameters": {
+    "inclined_plate": {
+      "panel_width": 180,
+      "panel_height": 110,
+      "panel_thickness": 8,
+      "panel_corner_radius": 8,
+      "panel_slope_deg": 38,
+      "opening_width": 24,
+      "opening_height": 16,
+      "opening_corner_radius": 4,
+      "opening_top_offset": 25,
+      "groove_width": 6,
+      "groove_depth": 4,
+      "groove_slope_deg": 65,
+      "base_depth": 60,
+      "base_thickness": 8,
+      "base_front_overhang": 45
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "bom_ready": true,
+  "requirements_digest": "17505d17fc6bdd221839accc143222a412aa5b31eafc21eeb8e2f3850ac06757",
+  "items": [
+    {
+      "id": "inclined_plate_base",
+      "role": "printed mechanical part",
+      "name": "38 degree inclined plate base",
+      "quantity": 1,
+      "procurement_status": "fabricate_from_cad",
+      "source": "generated_support_geometry",
+      "selection_reason": "One fused custom part implementing the user-specified 38 degree panel slope, rounded-rectangle through opening, 4 mm deep 65 degree groove, and a stabilizing horizontal foot.",
+      "part_identity": "709e80c88487a241"
+    }
+  ],
+  "risks": [
+    {
+      "id": "default_dimensions",
+      "status": "advisory",
+      "description": "Overall plate, opening, groove width, and foot dimensions are disclosed CAD defaults because the reference image has no scale."
+    }
+  ]
+}

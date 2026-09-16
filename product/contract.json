@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "artifact_level": "standalone_part",
+  "deliverable_intent": "printable_part",
+  "summary": "Single-piece 38 degree inclined plate base with rounded-rectangle through opening and a 4 mm deep 65 degree surface groove.",
+  "required_interfaces": [],
+  "external_references": [
+    {
+      "id": "reference_image",
+      "source": "user_requested",
+      "description": "Visual reference showing the red-marked opening and the line to be modeled as a groove.",
+      "path": "product/references/uploads/20260916T141604844Z-1-image.png"
+    }
+  ],
+  "assembly_story": {
+    "installation": "Place the single printed base on a flat horizontal surface.",
+    "maintenance": "No serviceable subassembly.",
+    "user_access": ["rounded-rectangle opening", "angled surface groove"]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "inclined_plate_base",
+        "design_id": "inclined_plate_base",
+        "description": "Parametric 38 degree inclined plate base.",
+        "delivery_target": "printable_part",
+        "required_formats": ["step"],
+        "interface_ids": [],
+        "reference_ids": ["reference_image"]
+      }
+    ]
+  },
+  "open_questions": []
+}
