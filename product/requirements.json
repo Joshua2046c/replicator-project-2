@@ -1,13 +1,13 @@
 {
   "requirements": {
     "product_class": { "value": "mechanical standalone wedge-shaped backboard base", "source": "user" },
-    "backboard_top_slope_deg": { "value": 20, "source": "user" },
+    "backboard_top_slope_deg": { "value": 15, "source": "user" },
     "backboard_bottom": { "value": "flat underside rests directly on the desktop; no separate front platform or foot", "source": "user" },
-    "opening": { "value": "rounded-rectangle through opening at the upper-left corner, close to the outer edges", "source": "user" },
-    "transverse_slot": { "value": "horizontal through-slot across the backboard, passing through the opening and through the backboard thickness", "source": "user" },
-    "backboard_size_mm": { "value": { "width": 180, "slope_length": 110, "front_thickness": 8, "corner_radius": 8 }, "source": "default" },
-    "opening_size_mm": { "value": { "width": 24, "height": 16, "corner_radius": 4, "left_edge_offset": 10, "top_edge_offset": 10 }, "source": "default" },
-    "slot_size_mm": { "value": { "width": 156, "height": 6, "side_margin": 12 }, "source": "default" },
+    "opening": { "value": "rounded-rectangle through opening in the upper-left corner of the full-width groove, inclined toward the rear", "source": "user" },
+    "groove": { "value": "horizontal 4 mm deep groove that spans the entire sloped face width without cutting through the backboard thickness", "source": "user" },
+    "backboard_size_mm": { "value": { "width": 180, "slope_length": 110, "front_thickness": 8 }, "source": "default" },
+    "opening_size_mm": { "value": { "width": 24, "height": 16, "corner_radius": 4, "left_edge_offset": 0, "top_edge_offset": 10, "rear_tilt_deg": 30 }, "source": "default" },
+    "groove_size_mm": { "value": { "width": 180, "height": 6, "depth": 4 }, "source": "default" },
     "manufacturing_method": { "value": "FDM 3D printing", "source": "default" }
   },
   "open_questions": []

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 5,
-  "sourceHash": "37799ff9e488698bedcb5b1dd76609a3929f319db507c355ecd8e4a3193e292a",
+  "buildNumber": 9,
+  "sourceHash": "03c9653b210858f512cd988fb22b63c02e069507557e404750411c928c9ad0c1",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "inclined_plate",
           "order": 0,
           "path": "design/inclined_plate_base/source/parts/inclined_plate/000-inclined_plate.py",
-          "sha256": "1c7eea59315a7e9f431b95a56f880270baf7dd7100c1fb1f83890ada14c985c2"
+          "sha256": "2b38930ece3df5c14ce744ba0a6f88e176d96dd394191e533da893ff67d35e74"
         }
       ],
       "dependencies": []
@@ -26,7 +26,7 @@
       "target": "inclined_plate",
       "label": "Wedge backboard",
       "kind": "generated",
-      "shapeHash": "d08feefe8dfb1ae20461e7e921a02969f3ec54026c720f5c00d05f7ae73041d4",
+      "shapeHash": "a36ebb56990df44a4983d5b14ef3139a4b74b353738d19aea2d8aaeb171b0491",
       "transform": {
         "positionMm": [
           0,
@@ -50,20 +50,21 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-16T14:44:45.641Z",
+  "updatedAt": "2026-09-16T15:06:32.126Z",
   "parameters": {
     "inclined_plate": {
       "opening_width": 24,
       "opening_height": 16,
       "opening_corner_radius": 4,
-      "opening_top_offset": 25,
+      "opening_top_offset": 10,
       "backboard_width": 180,
       "backboard_slope_length": 110,
       "front_thickness": 8,
-      "backboard_top_slope_deg": 38,
-      "opening_left_offset": 24,
-      "slot_width": 156,
-      "slot_height": 6
+      "backboard_top_slope_deg": 15,
+      "opening_left_offset": 0,
+      "groove_height": 6,
+      "groove_depth": 4,
+      "opening_rear_tilt_deg": 30
     }
   }
 }

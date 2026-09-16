@@ -1,11 +1,11 @@
 {
-  "version": 2,
-  "artifact_level": "standalone_part",
-  "deliverable_intent": "printable_part",
-  "summary": "Single-piece flat-bottom wedge backboard with a 20 degree top surface, near-edge upper-left rounded-rectangle opening, and a transverse through-slot.",
-  "required_interfaces": [],
-  "external_references": [{"id":"latest_marked_reference","source":"user_requested","description":"Latest markup defining the 20 degree wedge, near-edge upper-left opening, and transverse through-slot.","path":"product/references/uploads/20260916T144338030Z-1-mark.png"}],
-  "assembly_story": {"installation":"Place the flat underside directly on a horizontal desktop.","maintenance":"No serviceable subassembly.","user_access":["upper-left rounded-rectangle opening","transverse through-slot"]},
-  "cad": {"requirement":"required","designs":[{"role":"inclined_plate_base","design_id":"inclined_plate_base","description":"Parametric 20 degree wedge backboard with transverse through-slot.","delivery_target":"printable_part","required_formats":["step"],"interface_ids":[],"reference_ids":["latest_marked_reference"]}]},
-  "open_questions": []
+  "version":2,
+  "artifact_level":"standalone_part",
+  "deliverable_intent":"printable_part",
+  "summary":"Single-piece flat-bottom 15 degree wedge backboard with a full-width 4 mm surface groove and a rear-tilted rounded-rectangle through opening at the upper-left groove corner.",
+  "required_interfaces":[],
+  "external_references":[{"id":"latest_marked_reference","source":"user_requested","description":"Latest markup defining the 15 degree wedge, full-width groove, and rear-tilted upper-left opening.","path":"product/references/uploads/20260916T150311913Z-1-mark.png"}],
+  "assembly_story":{"installation":"Place the complete flat underside directly on a horizontal desktop.","maintenance":"No serviceable subassembly.","user_access":["full-width surface groove","rear-tilted upper-left rounded-rectangle opening"]},
+  "cad":{"requirement":"required","designs":[{"role":"inclined_plate_base","design_id":"inclined_plate_base","description":"Parametric 15 degree wedge backboard with full-width groove and rear-tilted opening.","delivery_target":"printable_part","required_formats":["step"],"interface_ids":[],"reference_ids":["latest_marked_reference"]}]},
+  "open_questions":[]
 }

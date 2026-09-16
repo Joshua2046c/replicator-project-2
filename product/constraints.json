@@ -2,33 +2,10 @@
   "kind": "mechanical_constraints",
   "design_id": "inclined_plate_base",
   "constraints": {
-    "backboard": {
-      "width_mm": 180,
-      "slope_length_mm": 110,
-      "front_thickness_mm": 8,
-      "corner_radius_mm": 8,
-      "underside": "flat on desktop",
-      "top_surface_slope_deg": 20,
-      "separate_front_platform": false
-    },
-    "opening": {
-      "kind": "rounded_rectangle_through_opening",
-      "width_mm": 24,
-      "height_mm": 16,
-      "corner_radius_mm": 4,
-      "left_edge_offset_mm": 10,
-      "top_edge_offset_mm": 10
-    },
-    "transverse_slot": {
-      "kind": "rectangular_through_slot",
-      "path": "parallel_to_backboard_width",
-      "width_mm": 156,
-      "height_mm": 6,
-      "side_margin_mm": 12,
-      "passes_through_opening": true,
-      "passes_through_backboard_thickness": true
-    },
-    "source_reference": "product/references/uploads/20260916T144338030Z-1-mark.png"
+    "backboard": {"width_mm":180,"slope_length_mm":110,"front_thickness_mm":8,"underside":"flat on desktop","top_surface_slope_deg":15,"separate_front_platform":false},
+    "groove": {"kind":"full_width_surface_groove","path":"parallel_to_backboard_width","width_mm":180,"height_mm":6,"depth_mm":4,"cuts_through_backboard_thickness":false},
+    "opening": {"kind":"rear_tilted_rounded_rectangle_through_opening","width_mm":24,"height_mm":16,"corner_radius_mm":4,"left_edge_offset_mm":0,"top_edge_offset_mm":10,"rear_tilt_deg":30,"located_in_groove":true},
+    "source_reference":"product/references/uploads/20260916T150311913Z-1-mark.png"
   },
-  "status": "ready_for_cad"
+  "status":"ready_for_cad"
 }
