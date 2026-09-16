@@ -2,10 +2,10 @@
   "version":2,
   "artifact_level":"standalone_part",
   "deliverable_intent":"printable_part",
-  "summary":"Single-piece flat-bottom 15 degree wedge backboard with a full-width 4 mm surface groove and a rear-tilted rounded-rectangle through opening at the upper-left groove corner.",
+  "summary":"Single-piece flat-bottom 15 degree wedge backboard with a contained rounded-rectangle blind pocket and a separate rearward 30 degree long surface groove.",
   "required_interfaces":[],
-  "external_references":[{"id":"latest_marked_reference","source":"user_requested","description":"Latest markup defining the 15 degree wedge, full-width groove, and rear-tilted upper-left opening.","path":"product/references/uploads/20260916T150311913Z-1-mark.png"}],
-  "assembly_story":{"installation":"Place the complete flat underside directly on a horizontal desktop.","maintenance":"No serviceable subassembly.","user_access":["full-width surface groove","rear-tilted upper-left rounded-rectangle opening"]},
-  "cad":{"requirement":"required","designs":[{"role":"inclined_plate_base","design_id":"inclined_plate_base","description":"Parametric 15 degree wedge backboard with full-width groove and rear-tilted opening.","delivery_target":"printable_part","required_formats":["step"],"interface_ids":[],"reference_ids":["latest_marked_reference"]}]},
+  "external_references":[{"id":"latest_marked_reference","source":"user_requested","description":"Latest markup defining the repaired edge, contained rounded-rectangle pocket, and 30 degree rearward long groove.","path":"product/references/uploads/20260916T152315130Z-1-mark.png"}],
+  "assembly_story":{"installation":"Place the complete flat underside directly on a horizontal desktop.","maintenance":"No serviceable subassembly.","user_access":["rounded-rectangle blind pocket","rearward long surface groove"]},
+  "cad":{"requirement":"required","designs":[{"role":"inclined_plate_base","design_id":"inclined_plate_base","description":"Parametric 15 degree wedge backboard with contained pocket and rearward 30 degree groove.","delivery_target":"printable_part","required_formats":["step"],"interface_ids":[],"reference_ids":["latest_marked_reference"]}]},
   "open_questions":[]
 }

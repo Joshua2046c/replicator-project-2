@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 9,
-  "sourceHash": "03c9653b210858f512cd988fb22b63c02e069507557e404750411c928c9ad0c1",
+  "buildNumber": 12,
+  "sourceHash": "c0a1d3bd4c51916b42b4570afdefb41a9b56afec39110027234aa6f63597522d",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "inclined_plate",
           "order": 0,
           "path": "design/inclined_plate_base/source/parts/inclined_plate/000-inclined_plate.py",
-          "sha256": "2b38930ece3df5c14ce744ba0a6f88e176d96dd394191e533da893ff67d35e74"
+          "sha256": "133d7f446e6765b070acb4c12ed48392c68b820fab358de653516ede90e0ac09"
         }
       ],
       "dependencies": []
@@ -26,7 +26,7 @@
       "target": "inclined_plate",
       "label": "Wedge backboard",
       "kind": "generated",
-      "shapeHash": "a36ebb56990df44a4983d5b14ef3139a4b74b353738d19aea2d8aaeb171b0491",
+      "shapeHash": "4c0d203af355258aabe66e1a89617a7923a7fb42ffe2b8b2b47911570202522e",
       "transform": {
         "positionMm": [
           0,
@@ -50,21 +50,24 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-16T15:06:32.126Z",
+  "updatedAt": "2026-09-16T15:27:44.428Z",
   "parameters": {
     "inclined_plate": {
-      "opening_width": 24,
-      "opening_height": 16,
-      "opening_corner_radius": 4,
-      "opening_top_offset": 10,
       "backboard_width": 180,
       "backboard_slope_length": 110,
       "front_thickness": 8,
       "backboard_top_slope_deg": 15,
-      "opening_left_offset": 0,
       "groove_height": 6,
       "groove_depth": 4,
-      "opening_rear_tilt_deg": 30
+      "groove_rear_tilt_deg": 30,
+      "pocket_width": 24,
+      "pocket_height": 16,
+      "pocket_corner_radius": 4,
+      "pocket_depth": 4,
+      "pocket_left_margin": 4,
+      "pocket_top_offset": 10,
+      "groove_side_margin": 1,
+      "groove_top_offset": 32
     }
   }
 }

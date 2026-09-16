@@ -1,0 +1,94 @@
+{
+  "designId": "inclined_plate_base",
+  "buildNumber": 12,
+  "sourceHash": "c0a1d3bd4c51916b42b4570afdefb41a9b56afec39110027234aa6f63597522d",
+  "schemaVersion": 2,
+  "exportId": "export-c2cf6b6d5726f5c041df115c23bc86e3",
+  "generatedAt": "2026-09-16T15:27:44.428Z",
+  "designSha256": "5758d5e090da6ab54da3bad0d60b573e437dc2104d7f483e0561dbcfb5c4243b",
+  "role": "inclined_plate_base",
+  "stateHash": "522637aebd6b6916d2dc07bfd17b9a4fefc86a2a2de8789d3b1c1d8751659261",
+  "stateManifest": {
+    "schemaVersion": 2,
+    "designId": "inclined_plate_base",
+    "role": "inclined_plate_base",
+    "design": {
+      "buildNumber": 12,
+      "sourceHash": "c0a1d3bd4c51916b42b4570afdefb41a9b56afec39110027234aa6f63597522d",
+      "designSha256": "4c3d0658172b7d08d07243ab747bf133b5dc33cc411961a942bd260f93869577",
+      "manifestSha256": "c58fa1306a87f57081df0e3a4b17e7841e30084d504e034de1c01725ef9e243f",
+      "stepSha256": "5353c3c69234d2bbe176fc08b53d0029b4e17bbb149915a325ccd8e0b3ad2d28",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/inclined_plate_base/README.md",
+      "sha256": "aac1d57e146d053b0516b67f957f832eaac2ee919feed747306e752764a7e4d2"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "3af22d1bda75990c0957ad04614a4a7b0b2f5ebd92e28ce40feefdd08c55f524",
+      "designRequirementSha256": "1a62e5bad98d21fd4d171299f79fc22344a53fe556d131ec25541bdc0e7bd5df",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "latest_marked_reference",
+          "path": "product/references/uploads/20260916T152315130Z-1-mark.png",
+          "sha256": "5fee5b0ff0e9dd2b1c8ccbd1291aeddc8e65a074cda6b557085fdba9a294a497",
+          "sizeBytes": 298536
+        }
+      ]
+    },
+    "delivery": {
+      "target": "printable_part",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "522637aebd6b6916d2dc07bfd17b9a4fefc86a2a2de8789d3b1c1d8751659261"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "c58fa1306a87f57081df0e3a4b17e7841e30084d504e034de1c01725ef9e243f",
+    "stepSha256": "5353c3c69234d2bbe176fc08b53d0029b4e17bbb149915a325ccd8e0b3ad2d28"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "3bfc30c1f59e5450ac85fc2386550dbd3dbd1554dbe17c0d9c37e568b813f05e"
+  },
+  "sourceHashes": {
+    "inclined_plate/inclined_plate": "133d7f446e6765b070acb4c12ed48392c68b820fab358de653516ede90e0ac09"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "inclined_plate": "4c0d203af355258aabe66e1a89617a7923a7fb42ffe2b8b2b47911570202522e"
+  },
+  "runtime": {
+    "manifestHash": "db7eda9ca0f7599605893eccbedbf9d7a2eb682bb80418080536971a776aab33",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "74f250de9b3dff3b5e0b94523625dd13c3710d3f81c487102225650971b064a6"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/inclined_plate_base/releases/export-c2cf6b6d5726f5c041df115c23bc86e3/model.step",
+      "role": "model/step",
+      "sha256": "5353c3c69234d2bbe176fc08b53d0029b4e17bbb149915a325ccd8e0b3ad2d28",
+      "sizeBytes": 65020
+    }
+  ],
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "068584ac546a1615585e9f2aa3962dd2",
+    "projectId": "791c62e9-8f34-4be7-ad86-876d8497e6aa",
+    "receiptPath": "manufacturing/inclined_plate_base/releases/export-c2cf6b6d5726f5c041df115c23bc86e3/receipt.json",
+    "payloadSha256": "d46330931c46a91734c91e0b5e92aca90afccab1546f1b13c08dfaba9f3abc2a",
+    "mac": "08bbb9bd4b55af3126579581a68f507373acc608a9486451376f4321731e7545"
+  },
+  "status": "reviewed",
+  "review": {
+    "reviewId": "review-12-f03fbcc9-65a0-4ec1-b178-7da7ca960657",
+    "path": ".work/builds/cad/inclined_plate_base/reviews/review-12-f03fbcc9-65a0-4ec1-b178-7da7ca960657/receipt.json",
+    "sha256": "60eb83f30118046e37aaa340bea5cab76697ffd89b0423893c60044627993d80"
+  }
+}
