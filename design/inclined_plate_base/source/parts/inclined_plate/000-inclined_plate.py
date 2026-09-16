@@ -1,37 +1,60 @@
-panel_width = param("panel_width", 180.0)
-panel_height = param("panel_height", 110.0)
-panel_thickness = param("panel_thickness", 8.0)
-panel_corner_radius = param("panel_corner_radius", 8.0)
-panel_slope_deg = param("panel_slope_deg", 38.0)
+backboard_width = param("backboard_width", 180.0)
+backboard_slope_length = param("backboard_slope_length", 110.0)
+front_thickness = param("front_thickness", 8.0)
+backboard_top_slope_deg = param("backboard_top_slope_deg", 38.0)
 opening_width = param("opening_width", 24.0)
 opening_height = param("opening_height", 16.0)
 opening_corner_radius = param("opening_corner_radius", 4.0)
+opening_left_offset = param("opening_left_offset", 24.0)
 opening_top_offset = param("opening_top_offset", 25.0)
 groove_width = param("groove_width", 6.0)
 groove_depth = param("groove_depth", 4.0)
-groove_slope_deg = param("groove_slope_deg", 65.0)
-base_depth = param("base_depth", 60.0)
-base_thickness = param("base_thickness", 8.0)
-base_front_overhang = param("base_front_overhang", 45.0)
+groove_cut_angle_from_surface_deg = param("groove_cut_angle_from_surface_deg", 65.0)
+groove_front_offset = param("groove_front_offset", 12.0)
 
-# The panel is authored flat in XY. Its lower long edge becomes the connection
-# to the horizontal foot after the 38 degree rotation about X.
-opening_y = panel_height - opening_top_offset
-groove_length = (panel_width ** 2 + panel_height ** 2) ** 0.5 * 1.35
-base_center_y = -base_front_overhang + base_depth / 2
+# A flat-bottom wedge rests directly on the desk. The sloped top is the
+# requested 38 degree backboard surface.
+slope_run = backboard_slope_length * cos(radians(backboard_top_slope_deg))
+slope_rise = backboard_slope_length * sin(radians(backboard_top_slope_deg))
+slope_plane = Location((0, 0, front_thickness), (backboard_top_slope_deg, 0, 0))
 
-with BuildPart() as plate_builder:
-    with BuildSketch():
-        RectangleRounded(panel_width, panel_height, panel_corner_radius, align=(Align.CENTER, Align.MIN))
-        with Locations((0, opening_y)):
-            RectangleRounded(opening_width, opening_height, opening_corner_radius, mode=Mode.SUBTRACT)
-    extrude(amount=panel_thickness)
-    with Locations(Location((0, opening_y, panel_thickness - groove_depth / 2), (0, 0, groove_slope_deg))):
-        Box(groove_length, groove_width, groove_depth, mode=Mode.SUBTRACT)
+opening_x = -backboard_width / 2 + opening_left_offset + opening_width / 2
+opening_s = backboard_slope_length - opening_top_offset - opening_height / 2
+groove_s = opening_s
+groove_length = groove_s - groove_front_offset
+groove_center_s = groove_front_offset + groove_length / 2
+# The tool is 25 degrees from the surface normal, hence 65 degrees from the surface.
+groove_tilt_from_normal_deg = 90 - groove_cut_angle_from_surface_deg
 
-# A horizontal foot overlaps the lower part of the inclined panel, creating a
-# fused, stable one-piece base rather than relying on a narrow lower edge.
-inclined_plate_solid = plate_builder.part.rotate(Axis.X, panel_slope_deg)
-base_foot = Pos(0, base_center_y, 0) * Box(panel_width, base_depth, base_thickness, align=(Align.CENTER, Align.CENTER, Align.MIN))
-base = inclined_plate_solid + base_foot
-publish("inclined_plate", base, "Inclined plate base")
+# Wedge has a complete horizontal underside (z=0). Its top face rises from
+# front_thickness to front_thickness + slope_rise over the horizontal run.
+backboard = Wedge(
+    backboard_width,
+    slope_run,
+    front_thickness,
+    0,
+    0,
+    backboard_width,
+    front_thickness + slope_rise,
+    align=(Align.CENTER, Align.MIN, Align.MIN),
+)
+
+# The opening is a genuine R4 rounded-rectangle, cut normal to the top surface.
+opening_profile = RectangleRounded(opening_width, opening_height, opening_corner_radius)
+opening_cutter = slope_plane * Pos(opening_x, opening_s, 0) * extrude(
+    opening_profile,
+    amount=120,
+    both=True,
+)
+
+# The groove path is parallel to the long sloped edges. Its cutter travels
+# 4 mm at 65 degrees to the surface, rather than angling across the face.
+groove_cutter = slope_plane * Pos(opening_x, groove_center_s, 0) * Rot(Y=-groove_tilt_from_normal_deg) * Box(
+    groove_width,
+    groove_length,
+    groove_depth,
+    align=(Align.CENTER, Align.CENTER, Align.MAX),
+)
+
+wedge_backboard = backboard - opening_cutter - groove_cutter
+publish("inclined_plate", wedge_backboard, "Wedge backboard")

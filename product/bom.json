@@ -2,16 +2,16 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "17505d17fc6bdd221839accc143222a412aa5b31eafc21eeb8e2f3850ac06757",
+  "requirements_digest": "06b6a0a049d2f6f84b2ec286c5f6e71a6e5b016b1030354e8b59a8864cf8381a",
   "items": [
     {
       "id": "inclined_plate_base",
       "role": "printed mechanical part",
-      "name": "38 degree inclined plate base",
+      "name": "38 degree wedge backboard base",
       "quantity": 1,
       "procurement_status": "fabricate_from_cad",
       "source": "generated_support_geometry",
-      "selection_reason": "One fused custom part implementing the user-specified 38 degree panel slope, rounded-rectangle through opening, 4 mm deep 65 degree groove, and a stabilizing horizontal foot.",
+      "selection_reason": "One custom flat-bottom wedge backboard implementing the user-specified 38 degree top surface, upper-left R4 rounded-rectangle through opening, and parallel 4 mm slant-cut groove at 65 degrees to the surface.",
       "part_identity": "709e80c88487a241"
     }
   ],
@@ -19,7 +19,7 @@
     {
       "id": "default_dimensions",
       "status": "advisory",
-      "description": "Overall plate, opening, groove width, and foot dimensions are disclosed CAD defaults because the reference image has no scale."
+      "description": "Overall wedge, opening, and groove dimensions are editable CAD defaults because the reference image has no scale."
     }
   ]
 }

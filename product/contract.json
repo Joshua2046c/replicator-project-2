@@ -2,20 +2,20 @@
   "version": 2,
   "artifact_level": "standalone_part",
   "deliverable_intent": "printable_part",
-  "summary": "Single-piece 38 degree inclined plate base with rounded-rectangle through opening and a 4 mm deep 65 degree surface groove.",
+  "summary": "Single-piece wedge-shaped backboard with a flat desktop underside, 38 degree top surface, upper-left rounded-rectangle opening, and parallel 65 degree slant-cut groove.",
   "required_interfaces": [],
   "external_references": [
     {
-      "id": "reference_image",
+      "id": "latest_marked_reference",
       "source": "user_requested",
-      "description": "Visual reference showing the red-marked opening and the line to be modeled as a groove.",
-      "path": "product/references/uploads/20260916T141604844Z-1-image.png"
+      "description": "Latest user markup defining the flat underside, 38 degree top surface, upper-left opening, and parallel slant-cut groove.",
+      "path": "product/references/uploads/20260916T143454736Z-1-mark.png"
     }
   ],
   "assembly_story": {
-    "installation": "Place the single printed base on a flat horizontal surface.",
+    "installation": "Place the flat underside of the single printed wedge directly on a horizontal desktop.",
     "maintenance": "No serviceable subassembly.",
-    "user_access": ["rounded-rectangle opening", "angled surface groove"]
+    "user_access": ["upper-left rounded-rectangle opening", "parallel slant-cut groove"]
   },
   "cad": {
     "requirement": "required",
@@ -23,11 +23,11 @@
       {
         "role": "inclined_plate_base",
         "design_id": "inclined_plate_base",
-        "description": "Parametric 38 degree inclined plate base.",
+        "description": "Parametric wedge-shaped backboard with a flat desktop underside and 38 degree top surface.",
         "delivery_target": "printable_part",
         "required_formats": ["step"],
         "interface_ids": [],
-        "reference_ids": ["reference_image"]
+        "reference_ids": ["latest_marked_reference"]
       }
     ]
   },
