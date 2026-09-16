@@ -1,25 +1,5 @@
 {
-  "schema_version": 1,
-  "status": "ready",
-  "bom_ready": true,
-  "requirements_digest": "06b6a0a049d2f6f84b2ec286c5f6e71a6e5b016b1030354e8b59a8864cf8381a",
-  "items": [
-    {
-      "id": "inclined_plate_base",
-      "role": "printed mechanical part",
-      "name": "38 degree wedge backboard base",
-      "quantity": 1,
-      "procurement_status": "fabricate_from_cad",
-      "source": "generated_support_geometry",
-      "selection_reason": "One custom flat-bottom wedge backboard implementing the user-specified 38 degree top surface, upper-left R4 rounded-rectangle through opening, and parallel 4 mm slant-cut groove at 65 degrees to the surface.",
-      "part_identity": "709e80c88487a241"
-    }
-  ],
-  "risks": [
-    {
-      "id": "default_dimensions",
-      "status": "advisory",
-      "description": "Overall wedge, opening, and groove dimensions are editable CAD defaults because the reference image has no scale."
-    }
-  ]
+  "schema_version":1,"status":"ready","bom_ready":true,"requirements_digest":"e999fba780ffe325b7c74801293ac9cb7b59d3f4aabfa55e9b7172c9bdabf2de",
+  "items":[{"id":"inclined_plate_base","role":"printed mechanical part","name":"20 degree wedge backboard base","quantity":1,"procurement_status":"fabricate_from_cad","source":"generated_support_geometry","selection_reason":"Custom flat-bottom wedge backboard implementing a 20 degree top surface, a near-edge upper-left R4 rounded-rectangle opening, and a transverse through-slot.","part_identity":"709e80c88487a241"}],
+  "risks":[{"id":"default_dimensions","status":"advisory","description":"Overall wedge, opening, and slot dimensions are editable defaults because the marked image has no scale."}]
 }

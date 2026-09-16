@@ -8,7 +8,7 @@
       "front_thickness_mm": 8,
       "corner_radius_mm": 8,
       "underside": "flat on desktop",
-      "top_surface_slope_deg": 38,
+      "top_surface_slope_deg": 20,
       "separate_front_platform": false
     },
     "opening": {
@@ -16,16 +16,19 @@
       "width_mm": 24,
       "height_mm": 16,
       "corner_radius_mm": 4,
-      "left_edge_offset_mm": 24,
-      "top_edge_offset_mm": 25
+      "left_edge_offset_mm": 10,
+      "top_edge_offset_mm": 10
     },
-    "groove": {
-      "path": "parallel_to_backboard_long_edges",
-      "width_mm": 6,
-      "depth_mm": 4,
-      "cut_angle_from_surface_deg": 65
+    "transverse_slot": {
+      "kind": "rectangular_through_slot",
+      "path": "parallel_to_backboard_width",
+      "width_mm": 156,
+      "height_mm": 6,
+      "side_margin_mm": 12,
+      "passes_through_opening": true,
+      "passes_through_backboard_thickness": true
     },
-    "source_reference": "product/references/uploads/20260916T143454736Z-1-mark.png"
+    "source_reference": "product/references/uploads/20260916T144338030Z-1-mark.png"
   },
   "status": "ready_for_cad"
 }
