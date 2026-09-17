@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 22,
-  "sourceHash": "af4554763c74b9169de3024f17b8a8fec2cc38a0b060b41332e4a42c76584e0f",
+  "buildNumber": 23,
+  "sourceHash": "b929625a95c96eb6aba945733ee7a5bb688bdccafdeaf39c7dd7438a401ad092",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "inclined_plate",
           "order": 0,
           "path": "design/inclined_plate_base/source/parts/inclined_plate/000-inclined_plate.py",
-          "sha256": "f5be0cee3adf99c37e1c48d39867b2d72d08200f86303bd277ebc9e5d1023f85"
+          "sha256": "b6e0d020658874203b2defd902bd9d0b95a08ff60619633829f50ba3fa482684"
         }
       ],
       "dependencies": []
@@ -24,9 +24,9 @@
     {
       "id": "inclined_plate",
       "target": "inclined_plate",
-      "label": "iPad cradle base",
+      "label": "Rounded iPad cradle",
       "kind": "generated",
-      "shapeHash": "53dffc23efcc1ac31423dc6b4b7f2db22a6ec3a879e65a995bee7a5f554b4efc",
+      "shapeHash": "7fcb57175232647bc25ffa6f951b807a7a605a3d931c36852f5438e7a497d007",
       "transform": {
         "positionMm": [
           0,
@@ -50,7 +50,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-17T12:48:17.744Z",
+  "updatedAt": "2026-09-17T12:55:34.074Z",
   "parameters": {
     "inclined_plate": {
       "backboard_width": 180,
@@ -66,7 +66,9 @@
       "pocket_top_offset": 10,
       "groove_top_offset": 32,
       "groove_top_width": 10,
-      "groove_apex_front_offset": 4.618802153517006
+      "groove_apex_front_offset": 4.618802153517006,
+      "inclined_plate_edge_radius": 0.8,
+      "inclined_plate_bottom_chamfer": 0.5
     }
   }
 }
