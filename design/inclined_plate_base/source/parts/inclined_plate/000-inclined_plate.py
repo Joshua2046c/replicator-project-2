@@ -4,7 +4,7 @@ front_thickness = param("front_thickness", 8.0)
 backboard_top_slope_deg = param("backboard_top_slope_deg", 10.0)
 groove_height = param("groove_height", 6.0)
 groove_depth = param("groove_depth", 6.0)
-groove_rear_tilt_deg = param("groove_rear_tilt_deg", 30.0)
+groove_rear_tilt_deg = param("groove_rear_tilt_deg", 15.0)
 groove_top_offset = param("groove_top_offset", 32.0)
 pocket_width = param("pocket_width", 24.0)
 pocket_height = param("pocket_height", 16.0)
@@ -33,8 +33,8 @@ backboard = Wedge(
     align=(Align.CENTER, Align.MIN, Align.MIN),
 )
 
-# The long channel is open from side to side. It enters 30 degrees toward the
-# rear and is 6 mm deep, exceeding the user-required 4 mm minimum at its ends.
+# The long channel is open from side to side. It enters 15 degrees toward the
+# rear, matching the latest side-view markup, while retaining the 6 mm depth.
 rear_tilted_groove = slope_plane * Pos(0, groove_s, 0) * Rot(X=groove_rear_tilt_deg) * Box(
     backboard_width + 2,
     groove_height,

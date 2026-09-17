@@ -3,7 +3,7 @@
   "constraints":{
     "backboard":{"width_mm":180,"slope_length_mm":110,"front_thickness_mm":8,"underside":"flat on desktop","top_surface_slope_deg":10,"separate_front_platform":false},
     "rounded_rectangle_pocket":{"kind":"rounded_rectangle_blind_pocket","width_mm":24,"height_mm":16,"corner_radius_mm":4,"depth_mm":4,"left_edge_margin_mm":4,"top_edge_offset_mm":10,"cuts_outer_faces":false},
-    "full_width_groove":{"kind":"side_to_side_open_surface_groove","path":"parallel_to_backboard_width","width_mm":180,"height_mm":6,"depth_mm":6,"minimum_side_opening_depth_mm":4,"rear_tilt_deg":30,"side_margin_mm":0,"cuts_through_backboard_thickness":false},
-    "source_reference":"product/references/uploads/20260916T211622657Z-1-mark.png"
+    "full_width_groove":{"kind":"side_to_side_open_surface_groove","path":"parallel_to_backboard_width","width_mm":180,"height_mm":6,"depth_mm":6,"minimum_side_opening_depth_mm":4,"rear_tilt_deg":15,"side_margin_mm":0,"cuts_through_backboard_thickness":false},
+    "source_reference":"product/references/uploads/20260917T104931989Z-1-mark.png"
   },"status":"ready_for_cad"
 }

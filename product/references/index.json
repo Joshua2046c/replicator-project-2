@@ -42,6 +42,13 @@
       "bytes": 81877,
       "addedAt": "2026-09-16T21:16:35.606Z",
       "share": false
+    },
+    {
+      "file": "uploads/20260917T104931989Z-1-mark.png",
+      "sha256": "cbdc8032ab990acfef3ad54cad4f841328f05bfab4b9c874b0623a8418efb011",
+      "bytes": 23818,
+      "addedAt": "2026-09-17T10:49:45.486Z",
+      "share": false
     }
   ]
 }
