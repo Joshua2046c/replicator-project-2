@@ -1,5 +1,5 @@
 {
-  "schema_version":1,"status":"ready","bom_ready":true,"requirements_digest":"9123c50246b595512ac51f4c7eda6199d91ec837d20142316fea62cc0fb94799",
-  "items":[{"id":"inclined_plate_base","role":"printed mechanical part","name":"10 degree wedge backboard with shallow through-edge groove","quantity":1,"procurement_status":"fabricate_from_cad","source":"generated_support_geometry","selection_reason":"Custom flat-bottom 10 degree wedge backboard with a contained R4 rounded-rectangle blind pocket and a separate 6 mm deep 15 degree rearward surface groove open through both side edges.","part_identity":"709e80c88487a241"}],
-  "risks":[{"id":"default_dimensions","status":"advisory","description":"Overall wedge, pocket, long-groove dimensions, positions, and the 15 degree groove tilt are editable defaults because the marked image has no scale."}]
+  "schema_version":1,"status":"ready","bom_ready":true,"requirements_digest":"c6b884ab68a4925e7d572fa22eeb997dc9075f7a6db7b32713a3845fb1e65c09",
+  "items":[{"id":"inclined_plate_base","role":"printed mechanical part","name":"10 degree wedge backboard with pointed V groove","quantity":1,"procurement_status":"fabricate_from_cad","source":"generated_support_geometry","selection_reason":"Custom flat-bottom 10 degree wedge backboard with a contained R4 rounded-rectangle blind pocket and a separate 6 mm deep side-to-side pointed V groove with its apex 1 mm forward of the mouth center.","part_identity":"709e80c88487a241"}],
+  "risks":[{"id":"default_dimensions","status":"advisory","description":"Overall wedge, pocket, groove dimensions, positions, and pointed-bottom offset are editable defaults because the marked image has no scale."}]
 }

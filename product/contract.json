@@ -2,10 +2,10 @@
   "version":2,
   "artifact_level":"standalone_part",
   "deliverable_intent":"printable_part",
-  "summary":"Single-piece flat-bottom 10 degree wedge backboard with a contained rounded-rectangle blind pocket and a separate 15 degree rearward surface groove open through both side edges.",
+  "summary":"Single-piece flat-bottom 10 degree wedge backboard with a contained rounded-rectangle blind pocket and a side-to-side V-groove with a slightly forward-offset pointed bottom.",
   "required_interfaces":[],
-  "external_references":[{"id":"latest_marked_reference","source":"user_requested","description":"Latest side-view markup defining a shallower rearward long-groove tilt.","path":"product/references/uploads/20260917T104931989Z-1-mark.png"}],
-  "assembly_story":{"installation":"Place the complete flat underside directly on a horizontal desktop.","maintenance":"No serviceable subassembly.","user_access":["rounded-rectangle blind pocket","side-to-side rearward long groove"]},
-  "cad":{"requirement":"required","designs":[{"role":"inclined_plate_base","design_id":"inclined_plate_base","description":"Parametric 10 degree wedge backboard with contained pocket and 6 mm deep rearward 15 degree groove open through both side edges.","delivery_target":"printable_part","required_formats":["step"],"interface_ids":[],"reference_ids":["latest_marked_reference"]}]},
+  "external_references":[{"id":"latest_marked_reference","source":"user_requested","description":"Latest side-view markup defining the pointed wedge/V groove section.","path":"product/references/uploads/20260917T105506961Z-1-mark.png"}],
+  "assembly_story":{"installation":"Place the complete flat underside directly on a horizontal desktop.","maintenance":"No serviceable subassembly.","user_access":["rounded-rectangle blind pocket","side-to-side pointed V groove"]},
+  "cad":{"requirement":"required","designs":[{"role":"inclined_plate_base","design_id":"inclined_plate_base","description":"Parametric 10 degree wedge backboard with contained pocket and 6 mm deep side-to-side pointed V groove.","delivery_target":"printable_part","required_formats":["step"],"interface_ids":[],"reference_ids":["latest_marked_reference"]}]},
   "open_questions":[]
 }

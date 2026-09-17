@@ -2,9 +2,9 @@ backboard_width = param("backboard_width", 180.0)
 backboard_slope_length = param("backboard_slope_length", 110.0)
 front_thickness = param("front_thickness", 8.0)
 backboard_top_slope_deg = param("backboard_top_slope_deg", 10.0)
-groove_height = param("groove_height", 6.0)
+groove_top_width = param("groove_top_width", 6.0)
 groove_depth = param("groove_depth", 6.0)
-groove_rear_tilt_deg = param("groove_rear_tilt_deg", 15.0)
+groove_apex_front_offset = param("groove_apex_front_offset", 1.0)
 groove_top_offset = param("groove_top_offset", 32.0)
 pocket_width = param("pocket_width", 24.0)
 pocket_height = param("pocket_height", 16.0)
@@ -20,7 +20,7 @@ slope_plane = Location((0, 0, front_thickness), (backboard_top_slope_deg, 0, 0))
 
 pocket_x = -backboard_width / 2 + pocket_left_margin + pocket_width / 2
 pocket_s = backboard_slope_length - pocket_top_offset - pocket_height / 2
-groove_s = backboard_slope_length - groove_top_offset - groove_height / 2
+groove_s = backboard_slope_length - groove_top_offset - groove_top_width / 2
 
 backboard = Wedge(
     backboard_width,
@@ -33,14 +33,19 @@ backboard = Wedge(
     align=(Align.CENTER, Align.MIN, Align.MIN),
 )
 
-# The long channel is open from side to side. It enters 15 degrees toward the
-# rear, matching the latest side-view markup, while retaining the 6 mm depth.
-rear_tilted_groove = slope_plane * Pos(0, groove_s, 0) * Rot(X=groove_rear_tilt_deg) * Box(
-    backboard_width + 2,
-    groove_height,
-    groove_depth,
-    align=(Align.CENTER, Align.CENTER, Align.MAX),
+# V-shaped groove profile in side view: the 6 mm top mouth descends to one
+# slightly forward-offset point, matching the red-marked section.
+groove_profile = Polygon(
+    (0, -groove_top_width / 2),
+    (0, groove_top_width / 2),
+    (groove_depth, -groove_apex_front_offset),
 )
+v_groove_prism = Rot(Y=90) * extrude(
+    groove_profile,
+    amount=backboard_width + 2,
+    both=True,
+)
+side_to_side_v_groove = slope_plane * Pos(0, groove_s, 0) * v_groove_prism
 
 # Separate rounded rectangular blind pocket keeps its exterior sidewall intact.
 pocket_profile = RectangleRounded(pocket_width, pocket_height, pocket_corner_radius)
@@ -49,5 +54,5 @@ rounded_rectangle_pocket = slope_plane * Pos(pocket_x, pocket_s, 0) * extrude(
     amount=-pocket_depth,
 )
 
-wedge_backboard = backboard - rear_tilted_groove - rounded_rectangle_pocket
+wedge_backboard = backboard - side_to_side_v_groove - rounded_rectangle_pocket
 publish("inclined_plate", wedge_backboard, "Wedge backboard")
