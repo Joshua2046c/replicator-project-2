@@ -1,11 +1,42 @@
 {
-  "version":2,
-  "artifact_level":"standalone_part",
-  "deliverable_intent":"printable_part",
-  "summary":"Single-piece flat-bottom 10 degree wedge backboard with a contained rounded-rectangle blind pocket and a side-to-side V-groove with a slightly forward-offset pointed bottom.",
-  "required_interfaces":[],
-  "external_references":[{"id":"latest_marked_reference","source":"user_requested","description":"Latest side-view markup defining the pointed wedge/V groove section.","path":"product/references/uploads/20260917T105506961Z-1-mark.png"}],
-  "assembly_story":{"installation":"Place the complete flat underside directly on a horizontal desktop.","maintenance":"No serviceable subassembly.","user_access":["rounded-rectangle blind pocket","side-to-side pointed V groove"]},
-  "cad":{"requirement":"required","designs":[{"role":"inclined_plate_base","design_id":"inclined_plate_base","description":"Parametric 10 degree wedge backboard with contained pocket and 6 mm deep side-to-side pointed V groove.","delivery_target":"printable_part","required_formats":["step"],"interface_ids":[],"reference_ids":["latest_marked_reference"]}]},
-  "open_questions":[]
+  "version": 2,
+  "artifact_level": "standalone_part",
+  "deliverable_intent": "printable_part",
+  "summary": "Single-piece 10 degree wedge with contained pocket and iPad insertion channel inclined rearward 20 degrees from vertical (default).",
+  "required_interfaces": [],
+  "external_references": [
+    {
+      "id": "latest_marked_reference",
+      "source": "user_requested",
+      "description": "User marked groove location; current user intent is insertion of the iPad lower edge.",
+      "path": "product/references/uploads/20260917T105506961Z-1-mark.png"
+    }
+  ],
+  "assembly_story": {
+    "installation": "Place the complete flat underside directly on a horizontal desktop.",
+    "maintenance": "No serviceable subassembly.",
+    "user_access": [
+      "rounded-rectangle blind pocket",
+      "side-to-side iPad insertion channel"
+    ]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "inclined_plate_base",
+        "design_id": "inclined_plate_base",
+        "description": "Wedge with flat-bottom channel inclined rearward 20 degrees from vertical, default slope-mouth 10 mm and normal depth 8 mm; exact device fit unverified.",
+        "delivery_target": "printable_part",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [],
+        "reference_ids": [
+          "latest_marked_reference"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
 }

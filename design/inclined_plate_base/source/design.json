@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 18,
-  "sourceHash": "500f458d2169bf90b912629453924781721640f9e176834d0acba69a02680a06",
+  "buildNumber": 22,
+  "sourceHash": "af4554763c74b9169de3024f17b8a8fec2cc38a0b060b41332e4a42c76584e0f",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "inclined_plate",
           "order": 0,
           "path": "design/inclined_plate_base/source/parts/inclined_plate/000-inclined_plate.py",
-          "sha256": "7d7db43ce8c906aeaf1a221cd087ccc66102add6e77d59fc42ebd4d073417e08"
+          "sha256": "f5be0cee3adf99c37e1c48d39867b2d72d08200f86303bd277ebc9e5d1023f85"
         }
       ],
       "dependencies": []
@@ -24,9 +24,9 @@
     {
       "id": "inclined_plate",
       "target": "inclined_plate",
-      "label": "Wedge backboard",
+      "label": "iPad cradle base",
       "kind": "generated",
-      "shapeHash": "2d08bb2f5ea488ef8ce1c7a241635ea2abbbfec13c3645a43410313782a0cd34",
+      "shapeHash": "53dffc23efcc1ac31423dc6b4b7f2db22a6ec3a879e65a995bee7a5f554b4efc",
       "transform": {
         "positionMm": [
           0,
@@ -50,14 +50,14 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-17T10:56:43.758Z",
+  "updatedAt": "2026-09-17T12:48:17.744Z",
   "parameters": {
     "inclined_plate": {
       "backboard_width": 180,
       "backboard_slope_length": 110,
       "front_thickness": 8,
       "backboard_top_slope_deg": 10,
-      "groove_depth": 6,
+      "groove_depth": 8,
       "pocket_width": 24,
       "pocket_height": 16,
       "pocket_corner_radius": 4,
@@ -65,8 +65,8 @@
       "pocket_left_margin": 4,
       "pocket_top_offset": 10,
       "groove_top_offset": 32,
-      "groove_top_width": 6,
-      "groove_apex_front_offset": 1
+      "groove_top_width": 10,
+      "groove_apex_front_offset": 4.618802153517006
     }
   }
 }

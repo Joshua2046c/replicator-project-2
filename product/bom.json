@@ -1,5 +1,25 @@
 {
-  "schema_version":1,"status":"ready","bom_ready":true,"requirements_digest":"c6b884ab68a4925e7d572fa22eeb997dc9075f7a6db7b32713a3845fb1e65c09",
-  "items":[{"id":"inclined_plate_base","role":"printed mechanical part","name":"10 degree wedge backboard with pointed V groove","quantity":1,"procurement_status":"fabricate_from_cad","source":"generated_support_geometry","selection_reason":"Custom flat-bottom 10 degree wedge backboard with a contained R4 rounded-rectangle blind pocket and a separate 6 mm deep side-to-side pointed V groove with its apex 1 mm forward of the mouth center.","part_identity":"709e80c88487a241"}],
-  "risks":[{"id":"default_dimensions","status":"advisory","description":"Overall wedge, pocket, groove dimensions, positions, and pointed-bottom offset are editable defaults because the marked image has no scale."}]
+  "schema_version": 1,
+  "status": "ready",
+  "bom_ready": true,
+  "requirements_digest": "3f99c38227bc11002d38bf6853a3447680fe4b22115036cae506882d51b8081f",
+  "items": [
+    {
+      "id": "inclined_plate_base",
+      "role": "printed mechanical part",
+      "name": "10 degree wedge backboard with iPad insertion channel",
+      "quantity": 1,
+      "procurement_status": "fabricate_from_cad",
+      "source": "generated_support_geometry",
+      "selection_reason": "Single printed wedge, contained rounded pocket, and full-width flat-bottom channel with parallel walls inclined rearward 20 degrees from vertical. Default mouth width along slope 10 mm, normal depth 8 mm, bottom forward offset 4.6188 mm; normal wall clearance 8.6603 mm.",
+      "part_identity": "709e80c88487a241"
+    }
+  ],
+  "risks": [
+    {
+      "id": "default_dimensions",
+      "status": "advisory",
+      "description": "Channel dimensions are editable defaults. Exact iPad/case fit, load capacity and tip resistance require physical verification; no specific iPad model is certified."
+    }
+  ]
 }

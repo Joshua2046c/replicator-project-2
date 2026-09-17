@@ -1,15 +1,74 @@
 {
   "requirements": {
-    "product_class": { "value": "mechanical standalone wedge-shaped backboard base", "source": "user" },
-    "backboard_top_slope_deg": { "value": 10, "source": "user" },
-    "backboard_bottom": { "value": "flat underside rests directly on the desktop; no separate front platform or foot", "source": "user" },
-    "rounded_rectangle_pocket": { "value": "upper-left rounded-rectangle blind pocket; preserve all outer faces and fill the prior edge notch", "source": "user" },
-    "full_width_groove": { "value": "side-to-side open groove with a V-shaped side section: two sloping walls meet at a slightly forward-offset pointed bottom", "source": "user" },
-    "groove_minimum_depth_mm": { "value": 4, "source": "user" },
-    "backboard_size_mm": { "value": { "width": 180, "slope_length": 110, "front_thickness": 8 }, "source": "default" },
-    "rounded_rectangle_pocket_size_mm": { "value": { "width": 24, "height": 16, "corner_radius": 4, "left_edge_margin": 4, "top_edge_offset": 10, "depth": 4 }, "source": "default" },
-    "groove_size_mm": { "value": { "width": 180, "top_width": 6, "depth": 6, "apex_front_offset": 1, "side_margin": 0 }, "source": "default" },
-    "manufacturing_method": { "value": "FDM 3D printing", "source": "default" }
+    "product_class": {
+      "value": "mechanical standalone wedge-shaped backboard base",
+      "source": "user"
+    },
+    "backboard_top_slope_deg": {
+      "value": 10,
+      "source": "user"
+    },
+    "backboard_bottom": {
+      "value": "flat underside rests directly on the desktop; no separate front platform or foot",
+      "source": "user"
+    },
+    "rounded_rectangle_pocket": {
+      "value": "upper-left rounded-rectangle blind pocket; preserve all outer faces and fill the prior edge notch",
+      "source": "user"
+    },
+    "full_width_groove": {
+      "value": "Side-to-side open insertion groove intended to receive the lower edge of an iPad.",
+      "source": "user"
+    },
+    "groove_minimum_depth_mm": {
+      "value": 4,
+      "source": "user"
+    },
+    "backboard_size_mm": {
+      "value": {
+        "width": 180,
+        "slope_length": 110,
+        "front_thickness": 8
+      },
+      "source": "default"
+    },
+    "rounded_rectangle_pocket_size_mm": {
+      "value": {
+        "width": 24,
+        "height": 16,
+        "corner_radius": 4,
+        "left_edge_margin": 4,
+        "top_edge_offset": 10,
+        "depth": 4
+      },
+      "source": "default"
+    },
+    "groove_size_mm": {
+      "value": {
+        "width": 180,
+        "top_width": 10,
+        "depth": 8,
+        "bottom_front_offset": 4.618802153517006,
+        "side_margin": 0
+      },
+      "source": "default"
+    },
+    "manufacturing_method": {
+      "value": "FDM 3D printing",
+      "source": "default"
+    },
+    "groove_section": {
+      "value": "Flat-bottom insertion channel with parallel rearward-inclined sidewalls.",
+      "source": "default"
+    },
+    "ipad_inclination": {
+      "value": "iPad must sit at an angle when inserted, not vertically.",
+      "source": "user"
+    },
+    "ipad_rearward_angle_deg": {
+      "value": 20,
+      "source": "default"
+    }
   },
   "open_questions": []
 }

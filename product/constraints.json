@@ -1,9 +1,39 @@
 {
-  "kind":"mechanical_constraints","design_id":"inclined_plate_base",
-  "constraints":{
-    "backboard":{"width_mm":180,"slope_length_mm":110,"front_thickness_mm":8,"underside":"flat on desktop","top_surface_slope_deg":10,"separate_front_platform":false},
-    "rounded_rectangle_pocket":{"kind":"rounded_rectangle_blind_pocket","width_mm":24,"height_mm":16,"corner_radius_mm":4,"depth_mm":4,"left_edge_margin_mm":4,"top_edge_offset_mm":10,"cuts_outer_faces":false},
-    "full_width_groove":{"kind":"side_to_side_open_v_groove","path":"parallel_to_backboard_width","width_mm":180,"top_width_mm":6,"depth_mm":6,"minimum_side_opening_depth_mm":4,"apex_front_offset_mm":1,"side_margin_mm":0,"cuts_through_backboard_thickness":false},
-    "source_reference":"product/references/uploads/20260917T105506961Z-1-mark.png"
-  },"status":"ready_for_cad"
+  "kind": "mechanical_constraints",
+  "design_id": "inclined_plate_base",
+  "constraints": {
+    "backboard": {
+      "width_mm": 180,
+      "slope_length_mm": 110,
+      "front_thickness_mm": 8,
+      "underside": "flat on desktop",
+      "top_surface_slope_deg": 10,
+      "separate_front_platform": false
+    },
+    "rounded_rectangle_pocket": {
+      "kind": "rounded_rectangle_blind_pocket",
+      "width_mm": 24,
+      "height_mm": 16,
+      "corner_radius_mm": 4,
+      "depth_mm": 4,
+      "left_edge_margin_mm": 4,
+      "top_edge_offset_mm": 10,
+      "cuts_outer_faces": false
+    },
+    "full_width_groove": {
+      "kind": "side_to_side_flat_bottom_insertion_channel",
+      "path": "parallel_to_backboard_width",
+      "width_mm": 180,
+      "top_width_mm": 10,
+      "depth_mm": 8,
+      "minimum_side_opening_depth_mm": 4,
+      "bottom_front_offset_mm": 4.618802153517006,
+      "side_margin_mm": 0,
+      "cuts_through_backboard_thickness": false,
+      "rearward_angle_from_vertical_deg": 20,
+      "normal_clear_width_mm": 8.660254037844386
+    },
+    "source_reference": "product/references/uploads/20260917T105506961Z-1-mark.png"
+  },
+  "status": "ready_for_cad"
 }
