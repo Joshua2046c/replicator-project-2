@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "standalone_part",
   "deliverable_intent": "printable_part",
-  "summary": "Single-piece 10 degree wedge with contained pocket and iPad insertion channel inclined rearward 20 degrees from vertical (default).",
+  "summary": "Inclined iPad cradle: R3 exterior and small pocket, 0.5 mm bottom chamfer, no rounding/chamfer on iPad insertion channel.",
   "required_interfaces": [],
   "external_references": [
     {
@@ -26,7 +26,7 @@
       {
         "role": "inclined_plate_base",
         "design_id": "inclined_plate_base",
-        "description": "Wedge with flat-bottom channel inclined rearward 20 degrees from vertical, default slope-mouth 10 mm and normal depth 8 mm; exact device fit unverified.",
+        "description": "10 degree wedge with unrounded 20 degree rearward insertion channel, nominal width 10 mm and depth 8 mm; other edges R3 except 0.5 mm bottom chamfer.",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"

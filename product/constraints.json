@@ -15,8 +15,8 @@
       "width_mm": 24,
       "height_mm": 16,
       "corner_radius_mm": 4,
-      "depth_mm": 4,
-      "left_edge_margin_mm": 4,
+      "depth_mm": 7,
+      "left_edge_margin_mm": 7,
       "top_edge_offset_mm": 10,
       "cuts_outer_faces": false
     },
@@ -31,9 +31,16 @@
       "side_margin_mm": 0,
       "cuts_through_backboard_thickness": false,
       "rearward_angle_from_vertical_deg": 20,
-      "normal_clear_width_mm": 8.660254037844386
+      "normal_clear_width_mm": 8.660254037844386,
+      "edge_radius_mm": 0,
+      "chamfer_mm": 0
     },
-    "source_reference": "product/references/uploads/20260917T105506961Z-1-mark.png"
+    "source_reference": "product/references/uploads/20260917T105506961Z-1-mark.png",
+    "edge_treatment": {
+      "exterior_and_small_pocket_radius_mm": 3,
+      "bottom_perimeter_chamfer_mm": 0.5,
+      "ipad_insertion_edges": "unrounded and unchamfered"
+    }
   },
   "status": "ready_for_cad"
 }

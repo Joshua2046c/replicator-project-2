@@ -37,9 +37,9 @@
         "width": 24,
         "height": 16,
         "corner_radius": 4,
-        "left_edge_margin": 4,
+        "left_edge_margin": 7,
         "top_edge_offset": 10,
-        "depth": 4
+        "depth": 7
       },
       "source": "default"
     },
@@ -68,6 +68,18 @@
     "ipad_rearward_angle_deg": {
       "value": 20,
       "source": "default"
+    },
+    "edge_rounding_radius_mm": {
+      "value": 3,
+      "source": "user"
+    },
+    "bottom_edge_chamfer_mm": {
+      "value": 0.5,
+      "source": "default"
+    },
+    "ipad_slot_edge_treatment": {
+      "value": "No chamfers or fillets on the iPad insertion structure, including mouth, side openings, walls and floor transitions.",
+      "source": "user"
     }
   },
   "open_questions": []

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "3f99c38227bc11002d38bf6853a3447680fe4b22115036cae506882d51b8081f",
+  "requirements_digest": "04c4ce212682c05846c49c8ee859b241f430e1e0a291a8863079066a391260b0",
   "items": [
     {
       "id": "inclined_plate_base",
@@ -11,7 +11,7 @@
       "quantity": 1,
       "procurement_status": "fabricate_from_cad",
       "source": "generated_support_geometry",
-      "selection_reason": "Single printed wedge, contained rounded pocket, and full-width flat-bottom channel with parallel walls inclined rearward 20 degrees from vertical. Default mouth width along slope 10 mm, normal depth 8 mm, bottom forward offset 4.6188 mm; normal wall clearance 8.6603 mm.",
+      "selection_reason": "Single printed 10 degree wedge with R3 exterior and small pocket edge fillets and 0.5 mm bottom chamfer. iPad insertion channel has NO chamfers or fillets: nominal width along slope 10 mm, normal depth 8 mm, bottom forward offset 4.618802 mm, rearward inclination 20 degrees. Small pocket depth and left margin remain 7 mm for R3.",
       "part_identity": "709e80c88487a241"
     }
   ],
