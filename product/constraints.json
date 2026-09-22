@@ -4,11 +4,12 @@
   "constraints": {
     "backboard": {
       "width_mm": 180,
-      "slope_length_mm": 110,
+      "slope_length_mm": 129.54850127723947,
       "front_thickness_mm": 8,
       "underside": "flat on desktop",
       "top_surface_slope_deg": 9,
-      "separate_front_platform": false
+      "separate_front_platform": false,
+      "plan_depth_mm": 127.95354425310373
     },
     "full_width_groove": {
       "kind": "side_to_side_flat_bottom_insertion_channel",
@@ -32,7 +33,7 @@
       "exterior_and_step_radius_mm": 3
     },
     "lowered_end_platform": {
-      "length_x_mm": 24,
+      "length_x_mm": 36,
       "depth_normal_to_top_mm": 7,
       "nominal_strip_width_mm": 32,
       "end": "negative_x",
@@ -44,14 +45,16 @@
       "rounding_mm": 3
     },
     "surface_grip_grooves": {
-      "count": 8,
+      "count": 10,
       "width_mm": 2.5,
       "normal_depth_mm": 1,
       "pitch_mm": 7.5,
       "length_mm": 168,
       "side_margin_mm": 6,
-      "first_center_s_mm": 7.75,
-      "last_center_s_mm": 60.25
+      "first_center_s_mm": 10.024250638619735,
+      "last_center_s_mm": 77.52425063861973,
+      "end_shape": "semicircular",
+      "end_radius_mm": 1.25
     }
   },
   "status": "ready_for_cad"

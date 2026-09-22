@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "71c6ef1638c0eff617de8f09662da4272426034b4c4d388b008c2da28f53b460",
+  "requirements_digest": "ce0a0bfafe76546488426b3ba7b2d7e9f02dbb962826f4b73055adb446b88026",
   "items": [
     {
       "id": "inclined_plate_base",
@@ -11,7 +11,7 @@
       "quantity": 1,
       "procurement_status": "fabricate_from_cad",
       "source": "generated_support_geometry",
-      "selection_reason": "One 9 degree printed wedge; eight parallel 168 mm long surface recesses, width 2.5 mm, normal depth 1 mm, pitch 7.5 mm. End terrace 24 mm long and 7 mm deep retained. R3 exterior and 0.5 mm bottom chamfer. iPad slot mouth 10 mm, depth 8 mm, offset 4.434472 mm to maintain rearward 20 degrees; no slot edge rounding.",
+      "selection_reason": "9 degree wedge, 180 x 127.953544 mm plan footprint (M4 11-inch body ratio); slope length 129.548501 mm. Terrace 36 mm long, 7 mm deep. Ten capsule grip grooves 168 x 2.5 mm, depth 1 mm, pitch 7.5 mm, end radius 1.25 mm. Retain iPad insertion channel and exterior R3.",
       "part_identity": "709e80c88487a241"
     }
   ],

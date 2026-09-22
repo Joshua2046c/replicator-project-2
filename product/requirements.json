@@ -23,7 +23,7 @@
     "backboard_size_mm": {
       "value": {
         "width": 180,
-        "slope_length": 110,
+        "slope_length": 129.54850127723947,
         "front_thickness": 8
       },
       "source": "default"
@@ -67,14 +67,7 @@
       "source": "user"
     },
     "lowered_end_platform": {
-      "value": "Remove the separate rounded rectangular pocket; lower the entire marked end area of the narrow rear platform, with the same depth and length as the former pocket.",
-      "source": "user"
-    },
-    "lowered_end_platform_size_mm": {
-      "value": {
-        "length_x": 24,
-        "normal_depth": 7
-      },
+      "value": "Open rear-strip terrace extended farther right from the negative-X end; retain 7 mm depth.",
       "source": "user"
     },
     "lowered_end_platform_extent": {
@@ -89,7 +82,8 @@
       "value": {
         "width_mm": 2.5,
         "depth_mm": 1,
-        "pattern": "parallel equally spaced recesses on marked broad platform"
+        "pattern": "parallel equally spaced recesses on marked broad platform",
+        "end_shape": "semicircular plan-view ends"
       },
       "source": "user"
     },
@@ -97,10 +91,35 @@
       "value": {
         "pitch_mm": 7.5,
         "side_margin_mm": 6,
-        "count": 8,
+        "count": 10,
         "length_mm": 168,
         "direction": "parallel to front edge and iPad channel"
       },
+      "source": "default"
+    },
+    "overall_proportion": {
+      "value": "Match iPad Pro 11 inch body proportions.",
+      "source": "user"
+    },
+    "proportion_reference": {
+      "value": {
+        "model": "iPad Pro 11-inch M4",
+        "long_mm": 249.7,
+        "short_mm": 177.5,
+        "source_url": "https://support.apple.com/en-us/119892"
+      },
+      "source": "research"
+    },
+    "proportion_implementation": {
+      "value": "Default M4 reference in landscape top-plan footprint, retain 180 mm width; plan depth 127.953544 mm. Not full-size device fit.",
+      "source": "default"
+    },
+    "lowered_end_platform_depth_mm": {
+      "value": 7,
+      "source": "user"
+    },
+    "lowered_end_platform_length_mm": {
+      "value": 36,
       "source": "default"
     }
   },

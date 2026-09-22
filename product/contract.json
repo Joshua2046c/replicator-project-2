@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "standalone_part",
   "deliverable_intent": "printable_part",
-  "summary": "9 degree inclined iPad base with eight parallel 2.5 mm wide, 1 mm deep surface grooves and retained end terrace.",
+  "summary": "9 degree base with iPad Pro 11-inch M4 landscape body ratio, extended 36 mm terrace and ten round-ended grip grooves.",
   "required_interfaces": [],
   "external_references": [
     {
@@ -28,6 +28,12 @@
       "source": "user_requested",
       "description": "Parallel recess direction on broad top platform",
       "path": "product/references/uploads/20260922T074013436Z-2-mark.png"
+    },
+    {
+      "id": "round_end_markup",
+      "source": "user_requested",
+      "path": "product/references/uploads/20260922T074617017Z-1-mark.png",
+      "description": "Extend terrace right and round the grip groove ends; match iPad Pro 11 proportions."
     }
   ],
   "assembly_story": {
@@ -44,7 +50,7 @@
       {
         "role": "inclined_plate_base",
         "design_id": "inclined_plate_base",
-        "description": "9 degree inclined iPad base with eight parallel 2.5 mm wide, 1 mm deep surface grooves and retained end terrace. iPad insertion angle remains rearward 20 degrees without edge rounding.",
+        "description": "9 degree base with iPad Pro 11-inch M4 landscape body ratio, extended 36 mm terrace and ten round-ended grip grooves.",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
@@ -54,7 +60,8 @@
           "latest_marked_reference",
           "end_terrace_markup",
           "grip_slope_markup_1",
-          "grip_slope_markup_2"
+          "grip_slope_markup_2",
+          "round_end_markup"
         ]
       }
     ]

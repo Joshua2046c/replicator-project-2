@@ -1,10 +1,10 @@
 backboard_width = param("backboard_width", 180.0)
 backboard_slope_length = param("backboard_slope_length", 110.0)
 front_thickness = param("front_thickness", 8.0)
-backboard_top_slope_deg = param("backboard_top_slope_deg", 10.0)
+backboard_top_slope_deg = param("backboard_top_slope_deg", 9.0)
 groove_top_width = param("groove_top_width", 10.0)
 groove_depth = param("groove_depth", 8.0)
-groove_apex_front_offset = param("groove_apex_front_offset", 4.618802153517006)
+groove_apex_front_offset = param("groove_apex_front_offset", 4.434472411622152)
 groove_top_offset = param("groove_top_offset", 32.0)
 pocket_width = param("pocket_width", 24.0)
 pocket_depth = param("pocket_depth", 7.0)
@@ -38,17 +38,17 @@ lean = groove_apex_front_offset / groove_depth
 groove_profile = Polygon((-eps, -groove_top_width / 2 + eps * lean), (-eps, groove_top_width / 2 + eps * lean), (groove_depth, groove_top_width / 2 - groove_apex_front_offset), (groove_depth, -groove_top_width / 2 - groove_apex_front_offset), align=None)
 groove_prism = Rot(Y=90) * extrude(groove_profile, amount=backboard_width/2+1, both=True)
 body = body - slope_plane * Pos(0,groove_s,0) * groove_prism
-# Parallel rectangular recesses on the broad front platform only.
-# All groove dimensions are in the inclined top-plane frame.
 usable_run = groove_s-groove_top_width/2-2*inclined_plate_grip_margin
 count = int((usable_run-inclined_plate_grip_width)//inclined_plate_grip_pitch)+1
 assert count > 0 and inclined_plate_grip_pitch > inclined_plate_grip_width
 pattern_run = (count-1)*inclined_plate_grip_pitch+inclined_plate_grip_width
 start_s = (groove_s-groove_top_width/2-pattern_run)/2
+# Capsule outline: semicircular plan-view ends, not a fillet of the slot lips.
+profile = SlotOverall(backboard_width-2*inclined_plate_grip_margin,inclined_plate_grip_width)
 for i in range(count):
-    tool = slope_plane * Pos(0,start_s+i*inclined_plate_grip_pitch,-inclined_plate_grip_depth) * Box(backboard_width-2*inclined_plate_grip_margin,inclined_plate_grip_width,inclined_plate_grip_depth+eps,align=(Align.CENTER,Align.MIN,Align.MIN))
+    tool = slope_plane * Pos(0,start_s+i*inclined_plate_grip_pitch+inclined_plate_grip_width/2,-inclined_plate_grip_depth) * extrude(profile,amount=inclined_plate_grip_depth+eps)
     body = body - tool
 assert len(body.solids()) == 1
 assert body.is_valid
-print('Grip grooves:',count,'width:',inclined_plate_grip_width,'depth:',inclined_plate_grip_depth,'pitch:',inclined_plate_grip_pitch)
-publish("inclined_plate",body,"Grooved iPad cradle")
+print('Grip count',count,'plan envelope',backboard_width,slope_run)
+publish("inclined_plate",body,"Round-ended grip cradle")
