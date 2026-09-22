@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "standalone_part",
   "deliverable_intent": "printable_part",
-  "summary": "Inclined iPad cradle: R3 exterior and small pocket, 0.5 mm bottom chamfer, no rounding/chamfer on iPad insertion channel.",
+  "summary": "Inclined iPad base with open 24 mm long, 7 mm deep end terrace replacing the small rounded pocket.",
   "required_interfaces": [],
   "external_references": [
     {
@@ -10,13 +10,19 @@
       "source": "user_requested",
       "description": "User marked groove location; current user intent is insertion of the iPad lower edge.",
       "path": "product/references/uploads/20260917T105506961Z-1-mark.png"
+    },
+    {
+      "id": "end_terrace_markup",
+      "source": "user_requested",
+      "description": "Marked end region to replace the pocket with a lowered full-strip terrace.",
+      "path": "product/references/uploads/20260922T073513764Z-1-mark.png"
     }
   ],
   "assembly_story": {
     "installation": "Place the complete flat underside directly on a horizontal desktop.",
     "maintenance": "No serviceable subassembly.",
     "user_access": [
-      "rounded-rectangle blind pocket",
+      "open lowered end terrace",
       "side-to-side iPad insertion channel"
     ]
   },
@@ -26,14 +32,15 @@
       {
         "role": "inclined_plate_base",
         "design_id": "inclined_plate_base",
-        "description": "10 degree wedge with unrounded 20 degree rearward insertion channel, nominal width 10 mm and depth 8 mm; other edges R3 except 0.5 mm bottom chamfer.",
+        "description": "10 degree wedge; end terrace length 24 mm, normal depth 7 mm, spanning rear strip to the unrounded iPad channel; R3 external edges.",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
         ],
         "interface_ids": [],
         "reference_ids": [
-          "latest_marked_reference"
+          "latest_marked_reference",
+          "end_terrace_markup"
         ]
       }
     ]

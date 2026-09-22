@@ -10,16 +10,6 @@
       "top_surface_slope_deg": 10,
       "separate_front_platform": false
     },
-    "rounded_rectangle_pocket": {
-      "kind": "rounded_rectangle_blind_pocket",
-      "width_mm": 24,
-      "height_mm": 16,
-      "corner_radius_mm": 4,
-      "depth_mm": 7,
-      "left_edge_margin_mm": 7,
-      "top_edge_offset_mm": 10,
-      "cuts_outer_faces": false
-    },
     "full_width_groove": {
       "kind": "side_to_side_flat_bottom_insertion_channel",
       "path": "parallel_to_backboard_width",
@@ -35,11 +25,23 @@
       "edge_radius_mm": 0,
       "chamfer_mm": 0
     },
-    "source_reference": "product/references/uploads/20260917T105506961Z-1-mark.png",
+    "source_reference": "product/references/uploads/20260922T073513764Z-1-mark.png",
     "edge_treatment": {
-      "exterior_and_small_pocket_radius_mm": 3,
       "bottom_perimeter_chamfer_mm": 0.5,
-      "ipad_insertion_edges": "unrounded and unchamfered"
+      "ipad_insertion_edges": "unrounded and unchamfered",
+      "exterior_and_step_radius_mm": 3
+    },
+    "lowered_end_platform": {
+      "length_x_mm": 24,
+      "depth_normal_to_top_mm": 7,
+      "nominal_strip_width_mm": 32,
+      "end": "negative_x",
+      "open_edges": [
+        "end",
+        "rear",
+        "ipad_channel"
+      ],
+      "rounding_mm": 3
     }
   },
   "status": "ready_for_cad"

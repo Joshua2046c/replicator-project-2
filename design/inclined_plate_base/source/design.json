@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 32,
-  "sourceHash": "dfd82b948aad7e7b42531f52066de86c75e8d72e920083156bdde655fbc0b194",
+  "buildNumber": 36,
+  "sourceHash": "127d5034681663ed27def70018cb48408f7f4d445f3d261603b26cac0a546c2f",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "inclined_plate",
           "order": 0,
           "path": "design/inclined_plate_base/source/parts/inclined_plate/000-inclined_plate.py",
-          "sha256": "760a74e130e06ca351e355df79d58535a596295f2aa9692dcca0669a589bbfd3"
+          "sha256": "006c3aa78c5fdf3cff5d0b98ed02eebfbbd916da8c94542ceb2d848dd70b1939"
         }
       ],
       "dependencies": []
@@ -24,9 +24,9 @@
     {
       "id": "inclined_plate",
       "target": "inclined_plate",
-      "label": "Rounded iPad cradle",
+      "label": "Stepped iPad cradle",
       "kind": "generated",
-      "shapeHash": "9bbc2dd42c2c5bb3b15b86e4e854011ef9603f951c65e28d7d6f57a61756a806",
+      "shapeHash": "5ff631d7e184669f6bbedae1a05e1c3fc597cf928d4c3924735c3eb7037ee752",
       "transform": {
         "positionMm": [
           0,
@@ -50,7 +50,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-17T13:24:39.042Z",
+  "updatedAt": "2026-09-22T07:37:35.349Z",
   "parameters": {
     "inclined_plate": {
       "backboard_width": 180,
@@ -59,11 +59,7 @@
       "backboard_top_slope_deg": 10,
       "groove_depth": 8,
       "pocket_width": 24,
-      "pocket_height": 16,
-      "pocket_corner_radius": 4,
       "pocket_depth": 7,
-      "pocket_left_margin": 7,
-      "pocket_top_offset": 10,
       "groove_top_offset": 32,
       "groove_top_width": 10,
       "groove_apex_front_offset": 4.618802153517006,
