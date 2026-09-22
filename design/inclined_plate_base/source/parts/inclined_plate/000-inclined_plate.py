@@ -6,11 +6,14 @@ groove_top_width = param("groove_top_width", 10.0)
 groove_depth = param("groove_depth", 8.0)
 groove_apex_front_offset = param("groove_apex_front_offset", 4.618802153517006)
 groove_top_offset = param("groove_top_offset", 32.0)
-# Former pocket controls now drive the open terrace.
 pocket_width = param("pocket_width", 24.0)
 pocket_depth = param("pocket_depth", 7.0)
 inclined_plate_edge_radius = param("inclined_plate_edge_radius", 3.0)
 inclined_plate_bottom_chamfer = param("inclined_plate_bottom_chamfer", 0.5)
+inclined_plate_grip_width = param("inclined_plate_grip_width", 2.5)
+inclined_plate_grip_depth = param("inclined_plate_grip_depth", 1.0)
+inclined_plate_grip_pitch = param("inclined_plate_grip_pitch", 7.5)
+inclined_plate_grip_margin = param("inclined_plate_grip_margin", 6.0)
 sn = sin(radians(backboard_top_slope_deg))
 cs = cos(radians(backboard_top_slope_deg))
 slope_run = backboard_slope_length * cs
@@ -21,8 +24,6 @@ body = Wedge(backboard_width, slope_run, front_thickness, 0, 0, backboard_width,
 terrace_start = groove_s
 cut = slope_plane * Pos(-backboard_width/2-1, terrace_start, -pocket_depth) * Box(pocket_width+1, backboard_slope_length-terrace_start+5, pocket_depth+5, align=(Align.MIN,Align.MIN,Align.MIN))
 body = body - cut
-# The temporary cut's front edges lie inside the future iPad slot. Do not round
-# them: that would spill into the opposite platform or alter the device interface.
 round_edges = []
 for e in body.edges():
     c = e.center()
@@ -37,6 +38,17 @@ lean = groove_apex_front_offset / groove_depth
 groove_profile = Polygon((-eps, -groove_top_width / 2 + eps * lean), (-eps, groove_top_width / 2 + eps * lean), (groove_depth, groove_top_width / 2 - groove_apex_front_offset), (groove_depth, -groove_top_width / 2 - groove_apex_front_offset), align=None)
 groove_prism = Rot(Y=90) * extrude(groove_profile, amount=backboard_width/2+1, both=True)
 body = body - slope_plane * Pos(0,groove_s,0) * groove_prism
+# Parallel rectangular recesses on the broad front platform only.
+# All groove dimensions are in the inclined top-plane frame.
+usable_run = groove_s-groove_top_width/2-2*inclined_plate_grip_margin
+count = int((usable_run-inclined_plate_grip_width)//inclined_plate_grip_pitch)+1
+assert count > 0 and inclined_plate_grip_pitch > inclined_plate_grip_width
+pattern_run = (count-1)*inclined_plate_grip_pitch+inclined_plate_grip_width
+start_s = (groove_s-groove_top_width/2-pattern_run)/2
+for i in range(count):
+    tool = slope_plane * Pos(0,start_s+i*inclined_plate_grip_pitch,-inclined_plate_grip_depth) * Box(backboard_width-2*inclined_plate_grip_margin,inclined_plate_grip_width,inclined_plate_grip_depth+eps,align=(Align.CENTER,Align.MIN,Align.MIN))
+    body = body - tool
 assert len(body.solids()) == 1
 assert body.is_valid
-publish("inclined_plate",body,"Stepped iPad cradle")
+print('Grip grooves:',count,'width:',inclined_plate_grip_width,'depth:',inclined_plate_grip_depth,'pitch:',inclined_plate_grip_pitch)
+publish("inclined_plate",body,"Grooved iPad cradle")

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 36,
-  "sourceHash": "127d5034681663ed27def70018cb48408f7f4d445f3d261603b26cac0a546c2f",
+  "buildNumber": 39,
+  "sourceHash": "f098b978cb26e1d6ba3d4b28be5bf18dafa40cf88b918995cba652936d22a916",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "inclined_plate",
           "order": 0,
           "path": "design/inclined_plate_base/source/parts/inclined_plate/000-inclined_plate.py",
-          "sha256": "006c3aa78c5fdf3cff5d0b98ed02eebfbbd916da8c94542ceb2d848dd70b1939"
+          "sha256": "e9bde7c6dbb74aa5b6eeafa722ff2796ca8fa8b688437ea9c47d87d4d5facfca"
         }
       ],
       "dependencies": []
@@ -24,9 +24,9 @@
     {
       "id": "inclined_plate",
       "target": "inclined_plate",
-      "label": "Stepped iPad cradle",
+      "label": "Grooved iPad cradle",
       "kind": "generated",
-      "shapeHash": "5ff631d7e184669f6bbedae1a05e1c3fc597cf928d4c3924735c3eb7037ee752",
+      "shapeHash": "77010faa5a6372766828b1b68acc467d157ef6793a79fb886afbfa8476bf242b",
       "transform": {
         "positionMm": [
           0,
@@ -50,21 +50,25 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-22T07:37:35.349Z",
+  "updatedAt": "2026-09-22T07:41:49.838Z",
   "parameters": {
     "inclined_plate": {
       "backboard_width": 180,
       "backboard_slope_length": 110,
       "front_thickness": 8,
-      "backboard_top_slope_deg": 10,
+      "backboard_top_slope_deg": 9,
       "groove_depth": 8,
       "pocket_width": 24,
       "pocket_depth": 7,
       "groove_top_offset": 32,
       "groove_top_width": 10,
-      "groove_apex_front_offset": 4.618802153517006,
+      "groove_apex_front_offset": 4.434472411622152,
       "inclined_plate_edge_radius": 3,
-      "inclined_plate_bottom_chamfer": 0.5
+      "inclined_plate_bottom_chamfer": 0.5,
+      "inclined_plate_grip_width": 2.5,
+      "inclined_plate_grip_depth": 1,
+      "inclined_plate_grip_pitch": 7.5,
+      "inclined_plate_grip_margin": 6
     }
   }
 }

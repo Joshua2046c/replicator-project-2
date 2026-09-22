@@ -7,7 +7,7 @@
       "slope_length_mm": 110,
       "front_thickness_mm": 8,
       "underside": "flat on desktop",
-      "top_surface_slope_deg": 10,
+      "top_surface_slope_deg": 9,
       "separate_front_platform": false
     },
     "full_width_groove": {
@@ -17,11 +17,11 @@
       "top_width_mm": 10,
       "depth_mm": 8,
       "minimum_side_opening_depth_mm": 4,
-      "bottom_front_offset_mm": 4.618802153517006,
+      "bottom_front_offset_mm": 4.434472411622152,
       "side_margin_mm": 0,
       "cuts_through_backboard_thickness": false,
       "rearward_angle_from_vertical_deg": 20,
-      "normal_clear_width_mm": 8.660254037844386,
+      "normal_clear_width_mm": 8.746197071393958,
       "edge_radius_mm": 0,
       "chamfer_mm": 0
     },
@@ -42,6 +42,16 @@
         "ipad_channel"
       ],
       "rounding_mm": 3
+    },
+    "surface_grip_grooves": {
+      "count": 8,
+      "width_mm": 2.5,
+      "normal_depth_mm": 1,
+      "pitch_mm": 7.5,
+      "length_mm": 168,
+      "side_margin_mm": 6,
+      "first_center_s_mm": 7.75,
+      "last_center_s_mm": 60.25
     }
   },
   "status": "ready_for_cad"

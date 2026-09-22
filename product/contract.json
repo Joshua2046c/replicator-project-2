@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "standalone_part",
   "deliverable_intent": "printable_part",
-  "summary": "Inclined iPad base with open 24 mm long, 7 mm deep end terrace replacing the small rounded pocket.",
+  "summary": "9 degree inclined iPad base with eight parallel 2.5 mm wide, 1 mm deep surface grooves and retained end terrace.",
   "required_interfaces": [],
   "external_references": [
     {
@@ -16,6 +16,18 @@
       "source": "user_requested",
       "description": "Marked end region to replace the pocket with a lowered full-strip terrace.",
       "path": "product/references/uploads/20260922T073513764Z-1-mark.png"
+    },
+    {
+      "id": "grip_slope_markup_1",
+      "source": "user_requested",
+      "description": "Reduce overall slope",
+      "path": "product/references/uploads/20260922T074013436Z-1-mark.png"
+    },
+    {
+      "id": "grip_slope_markup_2",
+      "source": "user_requested",
+      "description": "Parallel recess direction on broad top platform",
+      "path": "product/references/uploads/20260922T074013436Z-2-mark.png"
     }
   ],
   "assembly_story": {
@@ -32,7 +44,7 @@
       {
         "role": "inclined_plate_base",
         "design_id": "inclined_plate_base",
-        "description": "10 degree wedge; end terrace length 24 mm, normal depth 7 mm, spanning rear strip to the unrounded iPad channel; R3 external edges.",
+        "description": "9 degree inclined iPad base with eight parallel 2.5 mm wide, 1 mm deep surface grooves and retained end terrace. iPad insertion angle remains rearward 20 degrees without edge rounding.",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
@@ -40,7 +52,9 @@
         "interface_ids": [],
         "reference_ids": [
           "latest_marked_reference",
-          "end_terrace_markup"
+          "end_terrace_markup",
+          "grip_slope_markup_1",
+          "grip_slope_markup_2"
         ]
       }
     ]

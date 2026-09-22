@@ -5,7 +5,7 @@
       "source": "user"
     },
     "backboard_top_slope_deg": {
-      "value": 10,
+      "value": 9,
       "source": "user"
     },
     "backboard_bottom": {
@@ -33,7 +33,7 @@
         "width": 180,
         "top_width": 10,
         "depth": 8,
-        "bottom_front_offset": 4.618802153517006,
+        "bottom_front_offset": 4.434472411622152,
         "side_margin": 0
       },
       "source": "default"
@@ -79,6 +79,28 @@
     },
     "lowered_end_platform_extent": {
       "value": "At negative-X end, open to end and rear edge, spans the whole rear strip up to the iPad channel; nominal strip width 32 mm.",
+      "source": "default"
+    },
+    "slope_reduction_interpretation": {
+      "value": "Reduce the existing 10 degree angle by ten percent to 9 degrees.",
+      "source": "default"
+    },
+    "surface_grip_grooves": {
+      "value": {
+        "width_mm": 2.5,
+        "depth_mm": 1,
+        "pattern": "parallel equally spaced recesses on marked broad platform"
+      },
+      "source": "user"
+    },
+    "surface_grip_layout": {
+      "value": {
+        "pitch_mm": 7.5,
+        "side_margin_mm": 6,
+        "count": 8,
+        "length_mm": 168,
+        "direction": "parallel to front edge and iPad channel"
+      },
       "source": "default"
     }
   },
