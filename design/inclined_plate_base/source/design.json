@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 44,
-  "sourceHash": "8a268c63f0c3c4c74c7e586ec7443676a86355a4d8855bc6b7c8029ce8490257",
+  "buildNumber": 45,
+  "sourceHash": "2990505bd652daf112fbc128b6d6e51ac4709dcb8429b4fb297b5450d7201dba",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -26,7 +26,7 @@
       "target": "inclined_plate",
       "label": "Round-ended grip cradle",
       "kind": "generated",
-      "shapeHash": "0e1e55fc6d7c907b9fc4a83c8e1fcec75d4996e8cb55beefab2ea7a975b3d99f",
+      "shapeHash": "89d41a08470b81aa1c5b6b2d0205c2ddcb55fbefada870a365967654acc0a07c",
       "transform": {
         "positionMm": [
           0,
@@ -50,7 +50,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-24T03:42:14.133Z",
+  "updatedAt": "2026-09-24T04:18:10.789Z",
   "parameters": {
     "inclined_plate": {
       "backboard_width": 255.7,
@@ -58,7 +58,7 @@
       "front_thickness": 8,
       "backboard_top_slope_deg": 9,
       "groove_depth": 8,
-      "pocket_width": 36,
+      "pocket_width": 46,
       "pocket_depth": 7,
       "groove_top_offset": 32,
       "groove_top_width": 10,

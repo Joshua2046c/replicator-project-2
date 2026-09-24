@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "standalone_part",
   "deliverable_intent": "printable_part",
-  "summary": "Actual-size iPad Pro M4 base: 255.7 x 183.5 mm plan envelope including 3 mm per-side allowance, 9 degree slope, 18 round-ended grooves and retained 36 mm terrace.",
+  "summary": "Actual-size iPad Pro M4 base: 255.7 x 183.5 mm plan envelope including 3 mm per-side allowance, 9 degree slope, 18 round-ended grooves and retained 46 mm terrace.",
   "required_interfaces": [],
   "external_references": [
     {
@@ -34,6 +34,12 @@
       "source": "user_requested",
       "path": "product/references/uploads/20260922T074617017Z-1-mark.png",
       "description": "Extend terrace right and round the grip groove ends; match iPad Pro 11 proportions."
+    },
+    {
+      "id": "terrace_10mm_extension",
+      "source": "user_requested",
+      "path": "product/references/uploads/20260924T041643344Z-1-mark.png",
+      "description": "Extend marked lowered terrace 10 mm right, from 36 to 46 mm."
     }
   ],
   "assembly_story": {
@@ -50,7 +56,7 @@
       {
         "role": "inclined_plate_base",
         "design_id": "inclined_plate_base",
-        "description": "Actual-size iPad Pro M4 base: 255.7 x 183.5 mm plan envelope including 3 mm per-side allowance, 9 degree slope, 18 round-ended grooves and retained 36 mm terrace.",
+        "description": "Actual-size iPad Pro M4 base: 255.7 x 183.5 mm plan envelope including 3 mm per-side allowance, 9 degree slope, 18 round-ended grooves and retained 46 mm terrace.",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
@@ -61,7 +67,8 @@
           "end_terrace_markup",
           "grip_slope_markup_1",
           "grip_slope_markup_2",
-          "round_end_markup"
+          "round_end_markup",
+          "terrace_10mm_extension"
         ]
       }
     ]

@@ -33,7 +33,7 @@
       "exterior_and_step_radius_mm": 3
     },
     "lowered_end_platform": {
-      "length_x_mm": 36,
+      "length_x_mm": 46,
       "depth_normal_to_top_mm": 7,
       "nominal_strip_width_mm": 32,
       "end": "negative_x",

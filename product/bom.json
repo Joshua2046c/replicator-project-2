@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "5b00f32a8f8cabc83927e12d8358cf0f889d778861d72507e4b4ff84550f56b8",
+  "requirements_digest": "c47873db6a34d28654e00cb3fe6e4602b79efa443d472d71f85141a865fe19b1",
   "items": [
     {
       "id": "inclined_plate_base",
@@ -11,7 +11,7 @@
       "quantity": 1,
       "procurement_status": "fabricate_from_cad",
       "source": "generated_support_geometry",
-      "selection_reason": "Actual-size iPad Pro M4 reference 249.7 x 177.5 mm plus 3 mm per side: 255.7 x 183.5 mm plan envelope, slope length 185.787350582 mm at 9 degrees. Eighteen 243.7 mm long capsule grooves, 2.5 mm wide, 1 mm deep, pitch 7.5 mm. Retain terrace 36 x 7 mm length/depth, R3 exterior, 0.5 mm bottom chamfer and unrounded 20-degree iPad channel.",
+      "selection_reason": "Actual-size iPad Pro M4 reference 249.7 x 177.5 mm plus 3 mm per side: 255.7 x 183.5 mm plan envelope, slope length 185.787350582 mm at 9 degrees. Eighteen 243.7 mm long capsule grooves, 2.5 mm wide, 1 mm deep, pitch 7.5 mm. Retain terrace 46 x 7 mm length/depth, R3 exterior, 0.5 mm bottom chamfer and unrounded 20-degree iPad channel.",
       "part_identity": "709e80c88487a241"
     }
   ],

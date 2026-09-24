@@ -119,8 +119,8 @@
       "source": "user"
     },
     "lowered_end_platform_length_mm": {
-      "value": 36,
-      "source": "default"
+      "value": 46,
+      "source": "user"
     },
     "device_body_size_mm": {
       "value": {
