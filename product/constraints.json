@@ -3,18 +3,18 @@
   "design_id": "inclined_plate_base",
   "constraints": {
     "backboard": {
-      "width_mm": 180,
-      "slope_length_mm": 129.54850127723947,
+      "width_mm": 255.7,
+      "slope_length_mm": 185.78735058209853,
       "front_thickness_mm": 8,
       "underside": "flat on desktop",
       "top_surface_slope_deg": 9,
       "separate_front_platform": false,
-      "plan_depth_mm": 127.95354425310373
+      "plan_depth_mm": 183.5
     },
     "full_width_groove": {
       "kind": "side_to_side_flat_bottom_insertion_channel",
       "path": "parallel_to_backboard_width",
-      "width_mm": 180,
+      "width_mm": 255.7,
       "top_width_mm": 10,
       "depth_mm": 8,
       "minimum_side_opening_depth_mm": 4,
@@ -45,14 +45,14 @@
       "rounding_mm": 3
     },
     "surface_grip_grooves": {
-      "count": 10,
+      "count": 18,
       "width_mm": 2.5,
       "normal_depth_mm": 1,
       "pitch_mm": 7.5,
-      "length_mm": 168,
+      "length_mm": 243.7,
       "side_margin_mm": 6,
-      "first_center_s_mm": 10.024250638619735,
-      "last_center_s_mm": 77.52425063861973,
+      "first_center_s_mm": 8.143675291049263,
+      "last_center_s_mm": 135.64367529104925,
       "end_shape": "semicircular",
       "end_radius_mm": 1.25
     }

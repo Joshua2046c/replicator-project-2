@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "standalone_part",
   "deliverable_intent": "printable_part",
-  "summary": "9 degree base with iPad Pro 11-inch M4 landscape body ratio, extended 36 mm terrace and ten round-ended grip grooves.",
+  "summary": "Actual-size iPad Pro M4 base: 255.7 x 183.5 mm plan envelope including 3 mm per-side allowance, 9 degree slope, 18 round-ended grooves and retained 36 mm terrace.",
   "required_interfaces": [],
   "external_references": [
     {
@@ -50,7 +50,7 @@
       {
         "role": "inclined_plate_base",
         "design_id": "inclined_plate_base",
-        "description": "9 degree base with iPad Pro 11-inch M4 landscape body ratio, extended 36 mm terrace and ten round-ended grip grooves.",
+        "description": "Actual-size iPad Pro M4 base: 255.7 x 183.5 mm plan envelope including 3 mm per-side allowance, 9 degree slope, 18 round-ended grooves and retained 36 mm terrace.",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"

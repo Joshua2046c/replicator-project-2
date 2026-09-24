@@ -22,15 +22,15 @@
     },
     "backboard_size_mm": {
       "value": {
-        "width": 180,
-        "slope_length": 129.54850127723947,
+        "width": 255.7,
+        "slope_length": 185.78735058209853,
         "front_thickness": 8
       },
       "source": "default"
     },
     "groove_size_mm": {
       "value": {
-        "width": 180,
+        "width": 255.7,
         "top_width": 10,
         "depth": 8,
         "bottom_front_offset": 4.434472411622152,
@@ -91,14 +91,14 @@
       "value": {
         "pitch_mm": 7.5,
         "side_margin_mm": 6,
-        "count": 10,
-        "length_mm": 168,
+        "count": 18,
+        "length_mm": 243.7,
         "direction": "parallel to front edge and iPad channel"
       },
       "source": "default"
     },
     "overall_proportion": {
-      "value": "Match iPad Pro 11 inch body proportions.",
+      "value": "Use actual iPad Pro M4 body dimensions 249.7 x 177.5 mm, with 3 mm allowance around the perimeter, not a reduced-scale proportion.",
       "source": "user"
     },
     "proportion_reference": {
@@ -111,7 +111,7 @@
       "source": "research"
     },
     "proportion_implementation": {
-      "value": "Default M4 reference in landscape top-plan footprint, retain 180 mm width; plan depth 127.953544 mm. Not full-size device fit.",
+      "value": "Landscape top-plan envelope 255.7 x 183.5 mm; interpret allowance as 3 mm on each side. Maintain 9 degree slope, slope length 185.787350582 mm.",
       "source": "default"
     },
     "lowered_end_platform_depth_mm": {
@@ -121,6 +121,17 @@
     "lowered_end_platform_length_mm": {
       "value": 36,
       "source": "default"
+    },
+    "device_body_size_mm": {
+      "value": {
+        "long": 249.7,
+        "short": 177.5
+      },
+      "source": "user"
+    },
+    "perimeter_allowance_mm": {
+      "value": 3,
+      "source": "user"
     }
   },
   "open_questions": []
