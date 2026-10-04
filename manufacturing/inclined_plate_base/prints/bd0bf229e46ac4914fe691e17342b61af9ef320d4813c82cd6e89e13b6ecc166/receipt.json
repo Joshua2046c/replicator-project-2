@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "printId": "bd0bf229e46ac4914fe691e17342b61af9ef320d4813c82cd6e89e13b6ecc166",
+  "generatedAt": "2026-09-17T13:36:43.321Z",
+  "jobId": "default",
+  "designId": "inclined_plate_base",
+  "buildNumber": 33,
+  "sourceHash": "f7f1d3cba790a81f198506540763887d443a25aa9486bb96bb93b8a7fd836e03",
+  "sourceShapeHashes": {
+    "inclined_plate": "fd5803a551d17dc8d8c728f94ce156d0c4fb7fe087f0e02885165ee2ec9f040e"
+  },
+  "sourceStepHashes": {
+    "inclined_plate": "0cba73aa7a60e39989298da3b197b983d18633a709ae07fdb8b5924decb77f41"
+  },
+  "runtime": {
+    "manifestHash": "db7eda9ca0f7599605893eccbedbf9d7a2eb682bb80418080536971a776aab33",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "74f250de9b3dff3b5e0b94523625dd13c3710d3f81c487102225650971b064a6"
+  },
+  "algorithmVersion": 2,
+  "intentPath": ".work/builds/cad/inclined_plate_base/print-jobs.json",
+  "plan": {
+    "path": "manufacturing/inclined_plate_base/prints/bd0bf229e46ac4914fe691e17342b61af9ef320d4813c82cd6e89e13b6ecc166/print-plan.json",
+    "sha256": "cb6b0fe473994f75a0c4136be1ea5ea3c3e43aade9802ed29896c97cecaafabf",
+    "sizeBytes": 1315
+  },
+  "plates": [
+    {
+      "path": "manufacturing/inclined_plate_base/prints/bd0bf229e46ac4914fe691e17342b61af9ef320d4813c82cd6e89e13b6ecc166/plates/plate-001.3mf",
+      "sha256": "47329453ffbe7733eab58ee3db73480d64cb62cb711e511288e9df52d2af63ea",
+      "sizeBytes": 756133,
+      "plateIndex": 1
+    }
+  ],
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "068584ac546a1615585e9f2aa3962dd2",
+    "projectId": "791c62e9-8f34-4be7-ad86-876d8497e6aa",
+    "receiptPath": "manufacturing/inclined_plate_base/prints/bd0bf229e46ac4914fe691e17342b61af9ef320d4813c82cd6e89e13b6ecc166/receipt.json",
+    "payloadSha256": "fd224891fc525b6d0699f6b5b11d30397db67b18b39af8bbe41b2f3ffde848f0",
+    "mac": "3abdbae7b70ed4e61527df9c5d0bab5fa109b50df28769335a969857e3a01bfd"
+  }
+}

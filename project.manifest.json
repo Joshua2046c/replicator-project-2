@@ -1,0 +1,8 @@
+{
+  "formatVersion": 4,
+  "name": "平板底座",
+  "title": "iPad Pro M4 斜面底座",
+  "summary": "这是一款按用户提供机身尺寸设计的单件打印底座，设有 9° 斜面、防滑槽和 iPad 插槽，用于放置 iPad Pro M4，实际配合与支承稳定性仍需实物验证。",
+  "license": "MIT",
+  "artifacts": "rebuild"
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "printId": "bd0bf229e46ac4914fe691e17342b61af9ef320d4813c82cd6e89e13b6ecc166",
+  "generatedAt": "2026-09-17T13:36:43.321Z",
+  "intent": {
+    "schemaVersion": 1,
+    "jobId": "default",
+    "designId": "inclined_plate_base",
+    "buildNumber": 33,
+    "plate": {
+      "widthMm": 256,
+      "depthMm": 256,
+      "maxHeightMm": 256,
+      "edgeMarginMm": 5,
+      "partSpacingMm": 4
+    },
+    "items": [
+      {
+        "objectId": "inclined_plate",
+        "quantity": 1,
+        "orientationDeg": [
+          0,
+          0,
+          0
+        ],
+        "allowQuarterTurn": true
+      }
+    ]
+  },
+  "plates": [
+    {
+      "index": 1,
+      "fileName": "plate-001.3mf",
+      "widthMm": 256,
+      "depthMm": 256,
+      "usedWidthMm": 180,
+      "usedDepthMm": 108.328852831,
+      "utilization": 0.32221550514973235,
+      "placements": [
+        {
+          "objectId": "inclined_plate",
+          "label": "Rounded iPad cradle",
+          "copyIndex": 1,
+          "resourceKey": "inclined_plate:q0",
+          "orientationDeg": [
+            0,
+            0,
+            0
+          ],
+          "xMm": 7,
+          "yMm": 7,
+          "zMm": 0,
+          "widthMm": 180,
+          "depthMm": 108.32885283134,
+          "heightMm": 26.717792358174
+        }
+      ]
+    }
+  ]
+}
