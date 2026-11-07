@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "file": "models/inclined_plate_base.glb",
+      "design": "inclined_plate_base"
+    }
+  ]
+}

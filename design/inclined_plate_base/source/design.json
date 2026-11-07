@@ -1,9 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 45,
-  "sourceHash": "2990505bd652daf112fbc128b6d6e51ac4709dcb8429b4fb297b5450d7201dba",
   "units": "mm",
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "targets": [
     {
       "id": "inclined_plate",
@@ -26,7 +24,7 @@
       "target": "inclined_plate",
       "label": "Round-ended grip cradle",
       "kind": "generated",
-      "shapeHash": "89d41a08470b81aa1c5b6b2d0205c2ddcb55fbefada870a365967654acc0a07c",
+      "shapeHash": "0d76a60bc871b235dbba272446685348415a239661da8634d5f5c6cd09666f3a",
       "transform": {
         "positionMm": [
           0,
@@ -50,7 +48,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-24T04:18:10.789Z",
+  "updatedAt": "2026-11-07T14:47:20.036Z",
   "parameters": {
     "inclined_plate": {
       "backboard_width": 255.7,
